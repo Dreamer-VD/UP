@@ -1,0 +1,41 @@
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\bin\Debug\Стройматериалы.exe.config
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\bin\Debug\Стройматериалы.exe
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\bin\Debug\Стройматериалы.pdb
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.AssemblyReference.cache
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.SuggestedBindingRedirects.cache
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\App.g.cs
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы_MarkupCompile.cache
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы_MarkupCompile.lref
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.g.resources
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.Properties.Resources.resources
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.GenerateResource.cache
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.CoreCompileInputs.cache
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.exe
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.pdb
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\View\MainWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\Приложение\Стройматериалы\Стройматериалы\obj\Debug\View\MainWindow.baml
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\Стройматериалы.exe.config
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\Стройматериалы.exe
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\Стройматериалы.pdb
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\EntityFramework.dll
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\EntityFramework.SqlServer.dll
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\EntityFramework.xml
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\EntityFramework.SqlServer.xml
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\bin\Debug\ru\EntityFramework.resources.dll
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.AssemblyReference.cache
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.SuggestedBindingRedirects.cache
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\View\MainWindow.g.cs
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\App.g.cs
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы_Content.g.cs
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы_MarkupCompile.cache
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы_MarkupCompile.lref
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\View\MainWindow.baml
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.g.resources
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.Properties.Resources.resources
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.GenerateResource.cache
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.CoreCompileInputs.cache
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.csproj.CopyComplete
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.exe
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\Стройматериалы.pdb
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\View\Info.g.cs
+E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\Приложение\Стройматериалы\Стройматериалы\obj\Debug\View\Info.baml

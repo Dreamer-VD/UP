@@ -36,7 +36,7 @@ namespace BuildingMaterials.VIewModel
             {
                 if (_login == null || _password == null)
                 {
-                    MessageBox.Show("Поля до конца не заполненны!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Проблема с полями. Повторите попытку", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                     return;
                 }
                 using (var db = new TradeDB())
@@ -51,11 +51,12 @@ namespace BuildingMaterials.VIewModel
                         {
                             if (wind is MainWindow)
                             {
-                                wind.Hide();
+                                App.Current.MainWindow = adminWindow;
+                                wind.Close();
                             }
                         }
                     }
-                    else MessageBox.Show("Неверный логин или пароль", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
+                    else MessageBox.Show("Неверный логин или пароль. Повторите попытку!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
@@ -69,7 +70,7 @@ namespace BuildingMaterials.VIewModel
             {
                 if (_login == null || _password == null)
                 {
-                    MessageBox.Show("Поля до конца не заполненны!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Проблема с полями. Повторите попытку", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                     return;
                 }
                 using (var db = new TradeDB())
@@ -88,7 +89,7 @@ namespace BuildingMaterials.VIewModel
                             }
                         }
                     }
-                    else MessageBox.Show("Неверный логин или пароль", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
+                    else MessageBox.Show("Неверный логин или пароль. Повторите попытку!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)

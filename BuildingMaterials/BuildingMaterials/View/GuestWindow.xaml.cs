@@ -29,6 +29,7 @@ namespace BuildingMaterials.View
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow= new MainWindow();
+            App.Current.MainWindow = mainWindow;
             mainWindow.Show();
             this.Close();
         }

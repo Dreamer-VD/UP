@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BuildingMaterials.PageWindow;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,17 +27,25 @@ namespace BuildingMaterials.View
 
         private void BtnLoadProduct_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameInfo.Content = new PageProductInfo();
         }
 
         private void BtnLoadOrder_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameInfo.Content = new PageOrderInfo();
         }
 
         private void BtnLoadOrderPickupPoint_Click(object sender, RoutedEventArgs e)
         {
+            FrameInfo.Content = new PageOrderPickupPointInfo();
+        }
 
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            App.Current.MainWindow = mainWindow;
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

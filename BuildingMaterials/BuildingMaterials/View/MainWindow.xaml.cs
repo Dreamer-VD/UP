@@ -1,4 +1,5 @@
-﻿using BuildingMaterials.VIewModel;
+﻿using BuildingMaterials.View;
+using BuildingMaterials.VIewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,12 +31,22 @@ namespace BuildingMaterials
         private void BtnSignIn_Click(object sender, RoutedEventArgs e)
         {
             (DataContext as AuthorizationViewModel).AdminVerification();
+            (DataContext as AuthorizationViewModel).Password = PasswordBox.Password;
         }
 
         private void BtnSignInGuest_Click(object sender, RoutedEventArgs e)
         {
             (DataContext as AuthorizationViewModel).GuestVerification();
+            (DataContext as AuthorizationViewModel).Password = PasswordBox.Password;
 
+        }
+
+        private void BtnVisitor_Click_1(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = new InfoWindow();
+            App.Current.MainWindow = infoWindow;
+            infoWindow.Show();
+            this.Close();
         }
     }
 }

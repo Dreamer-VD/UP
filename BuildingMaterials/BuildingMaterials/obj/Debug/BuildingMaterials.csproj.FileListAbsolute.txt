@@ -106,3 +106,9 @@ D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\De
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\InfoWindow.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\InfoWindow.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderPickupPointInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderPickupPointInfo.baml

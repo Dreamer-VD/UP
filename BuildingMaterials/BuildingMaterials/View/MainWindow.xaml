@@ -12,8 +12,7 @@
         <Grid.RowDefinitions >
             <RowDefinition Height="80"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontSize="50" FontWeight="Bold" FontFamily="Comic Sans MS"/>
@@ -22,12 +21,13 @@
             <TextBlock Text="Логин" FontSize="30" FontFamily="Comic Sans MS"/>
             <TextBox Text="{Binding Login}" Height="30" FontSize="20" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Пароль" FontSize="30" FontFamily="Comic Sans MS"/>
-            <TextBox Text="{Binding Password}" Height="30" FontSize="20" FontFamily="Comic Sans MS"/>
+            <PasswordBox x:Name="PasswordBox" Height="30" FontSize="20" FontFamily="Comic Sans MS"/>
         </StackPanel>
-
-        <Button Grid.Row="2" Width="150" Height="25" Content="Войти" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" 
+        <StackPanel Grid.Row="2">
+            <Button  Width="200" Height="25" Content="Войти администратором" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" 
                 Background="Green" FontSize="15"/>
-        <Button Grid.Row="3" Width="150" Height="25" Content="Войти как гость" Background="Green" FontSize="15" Name="BtnSignInGuest" Click="BtnSignInGuest_Click"/>
-    
+            <Button Width="200" Height="25" Content="Войти как пользователь" Background="Green" FontSize="15" Name="BtnSignInGuest" Click="BtnSignInGuest_Click"/>
+            <Button Width="200" Height="25" Content="Войти как гость" Background="Green" FontSize="15" Name="BtnVisitor" Click="BtnVisitor_Click_1"/>
+        </StackPanel>
     </Grid>
 </Window>

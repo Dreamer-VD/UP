@@ -11,27 +11,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BuildingMaterials.View
+namespace BuildingMaterials.PageWindow
 {
     /// <summary>
-    /// Логика взаимодействия для AdminWindow.xaml
+    /// Логика взаимодействия для PageOrderInfo.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class PageOrderInfo : Page
     {
-        public AdminWindow()
+        public PageOrderInfo()
         {
             InitializeComponent();
-            this.DataContext = new GuestEntryModel();
-        }
-
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            App.Current.MainWindow = mainWindow;
-            mainWindow.Show();
-            this.Close();
+            this.DataContext = new OrderViewModel();
         }
     }
 }

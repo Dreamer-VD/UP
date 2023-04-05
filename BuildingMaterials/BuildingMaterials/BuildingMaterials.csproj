@@ -67,6 +67,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="PageWindow\PageOrderInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageWindow\PageOrderPickupPointInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageWindow\PageProductInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +99,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PageWindow\PageOrderInfo.xaml.cs">
+      <DependentUpon>PageOrderInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageWindow\PageOrderPickupPointInfo.xaml.cs">
+      <DependentUpon>PageOrderPickupPointInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageWindow\PageProductInfo.xaml.cs">
       <DependentUpon>PageProductInfo.xaml</DependentUpon>
     </Compile>
@@ -104,9 +118,11 @@
     <Compile Include="VIewModel\OrderPickupPoint.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="VIewModel\OrderPickupPointModel.cs" />
     <Compile Include="VIewModel\OrderStatus.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="VIewModel\OrderViewModel.cs" />
     <Compile Include="VIewModel\Product.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>

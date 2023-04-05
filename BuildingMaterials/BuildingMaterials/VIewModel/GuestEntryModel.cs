@@ -14,15 +14,6 @@ namespace BuildingMaterials.VIewModel
         private string _productCategory;
         private decimal _productCost;
         private ObservableCollection<Product> _products;
-        public GuestEntryModel()
-        {
-            Products = new ObservableCollection<Product>();
-            using (var db=new TradeDB())
-            {
-            var productInfoList = db.Product.ToList();
-            productInfoList.ForEach(p => Products.Add(p));
-            }
-        }
         public ObservableCollection<Product> Products
         {
             get => _products;
@@ -30,6 +21,15 @@ namespace BuildingMaterials.VIewModel
             {
                 _products = value;
                 OnPropertyChanged(nameof(Products));
+            }
+        }
+        public GuestEntryModel()
+        {
+            Products = new ObservableCollection<Product>();
+            using (var db=new TradeDB())
+            {
+            var productInfoList = db.Product.ToList();
+            productInfoList.ForEach(p => Products.Add(p));
             }
         }
         public string ProductName

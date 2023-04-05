@@ -12,7 +12,6 @@ namespace BuildingMaterials.VIewModel
     {
         private string _login;
         private string _password;
-        private string _role;
         public string Login
         {
             get => _login;
@@ -61,7 +60,7 @@ namespace BuildingMaterials.VIewModel
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Проблема с подключением. Повторите попытку!");
+                MessageBox.Show("Проблема с подключением... Повторите попытку!");
             }
         }
         public void GuestVerification()

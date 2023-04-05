@@ -75,6 +75,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\InfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,43 +92,46 @@
     <Compile Include="VIewModel\BaseViewModel.cs" />
     <Compile Include="VIewModel\GuestEntryModel.cs" />
     <Compile Include="VIewModel\Order.cs">
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="VIewModel\OrderPickupPoint.cs">
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="VIewModel\OrderStatus.cs">
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="VIewModel\Product.cs">
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="VIewModel\Role.cs">
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="VIewModel\TradeBDModel.Context.cs">
+    <Compile Include="VIewModel\TradeDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TradeBDModel.Context.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="VIewModel\TradeBDModel.cs">
+    <Compile Include="VIewModel\TradeDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="VIewModel\TradeBDModel.Designer.cs">
+    <Compile Include="VIewModel\TradeDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TradeBDModel.edmx</DependentUpon>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="VIewModel\User.cs">
-      <DependentUpon>TradeBDModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="View\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\GuestWindow.xaml.cs">
       <DependentUpon>GuestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InfoWindow.xaml.cs">
+      <DependentUpon>InfoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -154,12 +161,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <EntityDeploy Include="VIewModel\TradeBDModel.edmx">
+    <EntityDeploy Include="VIewModel\TradeDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TradeBDModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>TradeDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="VIewModel\TradeBDModel.edmx.diagram">
-      <DependentUpon>TradeBDModel.edmx</DependentUpon>
+    <None Include="VIewModel\TradeDBModel.edmx.diagram">
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -173,19 +180,22 @@
     <Resource Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="VIewModel\TradeBDModel.Context.tt">
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VIewModel\TradeDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TradeBDModel.edmx</DependentUpon>
-      <LastGenOutput>TradeBDModel.Context.cs</LastGenOutput>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+      <LastGenOutput>TradeDBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="VIewModel\TradeBDModel.tt">
+    <Content Include="VIewModel\TradeDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TradeBDModel.edmx</DependentUpon>
-      <LastGenOutput>TradeBDModel.cs</LastGenOutput>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+      <LastGenOutput>TradeDBModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Folder Include="Page\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

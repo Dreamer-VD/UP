@@ -77,3 +77,32 @@ E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\BuildingMaterials
 E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\BuildingMaterials\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CopyComplete
 E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\BuildingMaterials\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.exe
 E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\BuildingMaterials\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\BuildingMaterials.exe.config
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\BuildingMaterials.exe
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\BuildingMaterials.pdb
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\EntityFramework.dll
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\EntityFramework.SqlServer.dll
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\EntityFramework.xml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\EntityFramework.SqlServer.xml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\bin\Debug\ru\EntityFramework.resources.dll
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.AssemblyReference.cache
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.SuggestedBindingRedirects.cache
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\MainWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\App.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_Content.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.cache
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.lref
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\MainWindow.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.g.resources
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.Properties.Resources.resources
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.GenerateResource.cache
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CoreCompileInputs.cache
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CopyComplete
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.exe
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\InfoWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\InfoWindow.baml

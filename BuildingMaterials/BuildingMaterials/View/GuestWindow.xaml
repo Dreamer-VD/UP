@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuildingMaterials.View"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Главное окно" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
+        
         <DataGrid
             Grid.Row="0"
             ItemsSource="{Binding Products}"
@@ -31,6 +33,7 @@
                     Binding="{Binding ProductDescription}"/>
             </DataGrid.Columns>
         </DataGrid >
+        
         <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="Green" FontSize="12" 
                 FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
     </Grid>

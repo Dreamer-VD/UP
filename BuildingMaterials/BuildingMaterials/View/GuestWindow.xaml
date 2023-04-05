@@ -12,12 +12,8 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        
-        <DataGrid
-            Grid.Row="0"
-            ItemsSource="{Binding Products}"
-            IsReadOnly="True"
-            AutoGenerateColumns="False">
+
+        <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding Products}">
             <DataGrid.Columns>
                 <DataGridTextColumn 
                     Header="Название товара"
@@ -36,5 +32,6 @@
         
         <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="Green" FontSize="12" 
                 FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
+   
     </Grid>
 </Window>

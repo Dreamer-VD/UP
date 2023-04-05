@@ -18,14 +18,15 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0">
-            <Button x:Name="BtnProduct" Height="20" Width="150" Content="Продукты" Background="Green"/>
+            <Button x:Name="BtnLoadProduct" Height="20" Width="150" Content="Продукты" Background="Green" Click="BtnLoadProduct_Click"/>
 
-            <Button x:Name="BtnOrder" Height="20" Width="150" Content="Заказы" Background="Green"/>
+            <Button x:Name="BtnLoadOrder" Height="20" Width="150" Content="Заказы" Background="Green" Click="BtnLoadOrder_Click"/>
 
-            <Button x:Name="BtnOrderPickupPoint" Height="20" Width="150" Content="Пункты выдачи" Background="Green"/>
+            <Button x:Name="BtnLoadOrderPickupPoint" Height="20" Width="150" Content="Пункты выдачи" Background="Green" Click="BtnLoadOrderPickupPoint_Click"/>
         </StackPanel>
-        
 
-        <Frame Grid.Row="0" Grid.Column="1" Content="Вот здесь" />
+
+        <Frame Grid.Row="0" Grid.Column="1" NavigationUIVisibility="Hidden" Source="PageProductInfo"/>
+    
     </Grid>
 </Window>

@@ -23,5 +23,20 @@ namespace BuildingMaterials.View
         {
             InitializeComponent();
         }
+
+        private void BtnLoadProduct_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnLoadOrder_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnLoadOrderPickupPoint_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

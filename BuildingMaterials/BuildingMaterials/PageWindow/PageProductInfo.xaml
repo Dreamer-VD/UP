@@ -15,18 +15,13 @@
 
         <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False"  ItemsSource="{Binding Products}">
             <DataGrid.Columns>
-                <DataGridTextColumn 
-                    Header="Название товара"
-                    Binding="{Binding ProductName}"/>
-                <DataGridTextColumn 
-                    Header="Стоимость"
-                    Binding="{Binding ProductCost}"/>
-                <DataGridTextColumn 
-                    Header="Категория"
-                    Binding="{Binding ProductCategory}"/>
-                <DataGridTextColumn 
-                    Header="Описание"
-                    Binding="{Binding ProductDescription}"/>
+                <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}"/>
+                
+                <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
+                
+                <DataGridTextColumn Header="Категория" Binding="{Binding ProductCategory}"/>
+               
+                <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
             </DataGrid.Columns>
         </DataGrid >
     

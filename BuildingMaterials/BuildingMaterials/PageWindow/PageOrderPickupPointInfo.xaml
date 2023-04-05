@@ -15,12 +15,10 @@
 
         <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False"  ItemsSource="{Binding OrderPickupPoint}">
             <DataGrid.Columns>
-                <DataGridTextColumn 
-                    Header="Индекс улицы"
-                    Binding="{Binding Index}"/>
-                <DataGridTextColumn 
-                    Header="Улица"
-                    Binding="{Binding Street}"/>
+                <DataGridTextColumn Header="Индекс улицы" Binding="{Binding Index}"/>
+                
+                <DataGridTextColumn Header="Улица" Binding="{Binding Street}"/>
+            
             </DataGrid.Columns>
         </DataGrid >
     </Grid>

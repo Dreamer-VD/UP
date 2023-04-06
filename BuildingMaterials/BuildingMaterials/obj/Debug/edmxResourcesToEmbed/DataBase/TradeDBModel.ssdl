@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Хранилище TradeModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="Хранилище TradeDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Order">
     <Key>
       <PropertyRef Name="Id" />
@@ -43,12 +43,19 @@
     <Property Name="ProductArticleNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductDescription" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="ProductCategory" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="int" Nullable="false" />
     <Property Name="ProductPhoto" Type="image" />
     <Property Name="ProductManufacturer" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductCost" Type="decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="ProductDiscountAmount" Type="tinyint" />
     <Property Name="ProductQuantityInStock" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductСategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
@@ -69,19 +76,7 @@
     <Property Name="UserPassword" Type="nvarchar(max)" Nullable="false" />
     <Property Name="UserRoleId" Type="int" Nullable="false" />
   </EntityType>
-  <Association Name="FK__OrderProd__Order__403A8C7D">
-    <End Role="Order" Type="Self.Order" Multiplicity="1" />
-    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Order">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="OrderProduct">
-        <PropertyRef Name="OrderId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Order_OrderPickupPoint">
+  <Association Name="FK__Order__OrderPick__5812160E">
     <End Role="OrderPickupPoint" Type="Self.OrderPickupPoint" Multiplicity="1" />
     <End Role="Order" Type="Self.Order" Multiplicity="*" />
     <ReferentialConstraint>
@@ -93,7 +88,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Order_OrderStatus1">
+  <Association Name="FK__Order__OrderStat__571DF1D5">
     <End Role="OrderStatus" Type="Self.OrderStatus" Multiplicity="1" />
     <End Role="Order" Type="Self.Order" Multiplicity="*" />
     <ReferentialConstraint>
@@ -105,7 +100,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Order_User">
+  <Association Name="FK__Order__UserId__59063A47">
     <End Role="User" Type="Self.User" Multiplicity="0..1" />
     <End Role="Order" Type="Self.Order" Multiplicity="*" />
     <ReferentialConstraint>
@@ -117,7 +112,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_OrderProduct_Product">
+  <Association Name="FK__OrderProd__Order__5BE2A6F2">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__Produ__5CD6CB2B">
     <End Role="Product" Type="Self.Product" Multiplicity="1" />
     <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
     <ReferentialConstraint>
@@ -129,7 +136,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_User_Role">
+  <Association Name="FK__Product__Product__5070F446">
+    <End Role="ProductСategory" Type="Self.ProductСategory" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductСategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__UserRoleId__4BAC3F29">
     <End Role="Role" Type="Self.Role" Multiplicity="1" />
     <End Role="User" Type="Self.User" Multiplicity="*" />
     <ReferentialConstraint>
@@ -141,35 +160,40 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="Хранилище TradeModelContainer">
+  <EntityContainer Name="Хранилище TradeDBModelContainer">
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OrderPickupPoint" EntityType="Self.OrderPickupPoint" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OrderStatus" EntityType="Self.OrderStatus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductСategory" EntityType="Self.ProductСategory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__OrderProd__Order__403A8C7D" Association="Self.FK__OrderProd__Order__403A8C7D">
-      <End Role="Order" EntitySet="Order" />
-      <End Role="OrderProduct" EntitySet="OrderProduct" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Order_OrderPickupPoint" Association="Self.FK_Order_OrderPickupPoint">
+    <AssociationSet Name="FK__Order__OrderPick__5812160E" Association="Self.FK__Order__OrderPick__5812160E">
       <End Role="OrderPickupPoint" EntitySet="OrderPickupPoint" />
       <End Role="Order" EntitySet="Order" />
     </AssociationSet>
-    <AssociationSet Name="FK_Order_OrderStatus1" Association="Self.FK_Order_OrderStatus1">
+    <AssociationSet Name="FK__Order__OrderStat__571DF1D5" Association="Self.FK__Order__OrderStat__571DF1D5">
       <End Role="OrderStatus" EntitySet="OrderStatus" />
       <End Role="Order" EntitySet="Order" />
     </AssociationSet>
-    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+    <AssociationSet Name="FK__Order__UserId__59063A47" Association="Self.FK__Order__UserId__59063A47">
       <End Role="User" EntitySet="User" />
       <End Role="Order" EntitySet="Order" />
     </AssociationSet>
-    <AssociationSet Name="FK_OrderProduct_Product" Association="Self.FK_OrderProduct_Product">
+    <AssociationSet Name="FK__OrderProd__Order__5BE2A6F2" Association="Self.FK__OrderProd__Order__5BE2A6F2">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__Produ__5CD6CB2B" Association="Self.FK__OrderProd__Produ__5CD6CB2B">
       <End Role="Product" EntitySet="Product" />
       <End Role="OrderProduct" EntitySet="OrderProduct" />
     </AssociationSet>
-    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+    <AssociationSet Name="FK__Product__Product__5070F446" Association="Self.FK__Product__Product__5070F446">
+      <End Role="ProductСategory" EntitySet="ProductСategory" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__UserRoleId__4BAC3F29" Association="Self.FK__User__UserRoleId__4BAC3F29">
       <End Role="Role" EntitySet="Role" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>

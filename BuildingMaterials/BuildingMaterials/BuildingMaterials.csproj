@@ -80,6 +80,9 @@
     <Compile Include="DataBase\Product.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataBase\ProductСategory.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataBase\Role.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>

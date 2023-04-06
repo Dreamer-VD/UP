@@ -29,6 +29,7 @@ namespace BuildingMaterials.DataBase
         public virtual DbSet<OrderPickupPoint> OrderPickupPoint { get; set; }
         public virtual DbSet<OrderStatus> OrderStatus { get; set; }
         public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<ProductСategory> ProductСategory { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<User> User { get; set; }
     }

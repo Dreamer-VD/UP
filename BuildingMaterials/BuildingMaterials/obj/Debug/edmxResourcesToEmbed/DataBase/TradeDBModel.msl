@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище TradeModelContainer" CdmEntityContainer="TradeDB">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TradeDBModelContainer" CdmEntityContainer="TradeDB">
     <EntitySetMapping Name="Order">
-      <EntityTypeMapping TypeName="TradeModel.Order">
+      <EntityTypeMapping TypeName="TradeDBModel.Order">
         <MappingFragment StoreEntitySet="Order">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="OrderStatusId" ColumnName="OrderStatusId" />
@@ -15,7 +15,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderPickupPoint">
-      <EntityTypeMapping TypeName="TradeModel.OrderPickupPoint">
+      <EntityTypeMapping TypeName="TradeDBModel.OrderPickupPoint">
         <MappingFragment StoreEntitySet="OrderPickupPoint">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Index" ColumnName="Index" />
@@ -24,7 +24,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderStatus">
-      <EntityTypeMapping TypeName="TradeModel.OrderStatus">
+      <EntityTypeMapping TypeName="TradeDBModel.OrderStatus">
         <MappingFragment StoreEntitySet="OrderStatus">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="StatusName" ColumnName="StatusName" />
@@ -32,13 +32,13 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Product">
-      <EntityTypeMapping TypeName="TradeModel.Product">
+      <EntityTypeMapping TypeName="TradeDBModel.Product">
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
           <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
-          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
           <ScalarProperty Name="ProductPhoto" ColumnName="ProductPhoto" />
           <ScalarProperty Name="ProductManufacturer" ColumnName="ProductManufacturer" />
           <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
@@ -47,8 +47,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ProductСategory">
+      <EntityTypeMapping TypeName="TradeDBModel.ProductСategory">
+        <MappingFragment StoreEntitySet="ProductСategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Role">
-      <EntityTypeMapping TypeName="TradeModel.Role">
+      <EntityTypeMapping TypeName="TradeDBModel.Role">
         <MappingFragment StoreEntitySet="Role">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="RoleName" ColumnName="RoleName" />
@@ -56,7 +64,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="User">
-      <EntityTypeMapping TypeName="TradeModel.User">
+      <EntityTypeMapping TypeName="TradeDBModel.User">
         <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="UserSurname" ColumnName="UserSurname" />
@@ -68,7 +76,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="OrderProduct" TypeName="TradeModel.OrderProduct" StoreEntitySet="OrderProduct">
+    <AssociationSetMapping Name="OrderProduct" TypeName="TradeDBModel.OrderProduct" StoreEntitySet="OrderProduct">
       <EndProperty Name="Order">
         <ScalarProperty Name="Id" ColumnName="OrderId" />
       </EndProperty>

@@ -12,27 +12,18 @@ namespace BuildingMaterials.DataBase
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class ProductСategory
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public ProductСategory()
         {
-            this.Order = new HashSet<Order>();
+            this.Product = new HashSet<Product>();
         }
     
         public int Id { get; set; }
-        public string ProductArticleNumber { get; set; }
-        public string ProductName { get; set; }
-        public string ProductDescription { get; set; }
-        public int ProductCategoryId { get; set; }
-        public byte[] ProductPhoto { get; set; }
-        public string ProductManufacturer { get; set; }
-        public decimal ProductCost { get; set; }
-        public Nullable<byte> ProductDiscountAmount { get; set; }
-        public int ProductQuantityInStock { get; set; }
+        public string CategoryName { get; set; }
     
-        public virtual ProductСategory ProductСategory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<Product> Product { get; set; }
     }
 }

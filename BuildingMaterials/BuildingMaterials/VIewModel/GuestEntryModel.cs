@@ -12,7 +12,6 @@ namespace BuildingMaterials.VIewModel
     {
         private string _productName;
         private string _productDescription;
-        private string _productCategory;
         private decimal _productCost;
         private ObservableCollection<Product> _products;
         public ObservableCollection<Product> Products
@@ -49,15 +48,6 @@ namespace BuildingMaterials.VIewModel
             {
                 _productDescription = value;
                 OnPropertyChanged(nameof(ProductDescription));
-            }
-        }
-        public string ProductCategory
-        {
-            get => _productCategory;
-            set
-            {
-                _productCategory = value;
-                OnPropertyChanged(nameof(ProductCategory));
             }
         }
         public decimal ProductCost

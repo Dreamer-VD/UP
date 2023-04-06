@@ -67,6 +67,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataBase\AppData.cs" />
     <Compile Include="DataBase\Order.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
@@ -211,7 +212,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="DataBase\TradeDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

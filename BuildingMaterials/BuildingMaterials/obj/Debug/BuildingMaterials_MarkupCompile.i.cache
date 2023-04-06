@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\
+E:\Praktiks\UP\UP\BuildingMaterials\BuildingMaterials\obj\Debug\
 BuildingMaterials
 none
 false
 DEBUG;TRACE
-D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\App.xaml
+E:\Praktiks\UP\UP\BuildingMaterials\BuildingMaterials\App.xaml
 81768343265
 2380730423
-27-721042599
-18-1150476585
+282072827485
+18110722761
 PageWindow\PageOrderInfo.xaml;PageWindow\PageOrderPickupPointInfo.xaml;PageWindow\PageProductInfo.xaml;View\AdminWindow.xaml;View\GuestWindow.xaml;View\InfoWindow.xaml;View\MainWindow.xaml;View\ManagerWindow.xaml;
 resource\logo.png
 False

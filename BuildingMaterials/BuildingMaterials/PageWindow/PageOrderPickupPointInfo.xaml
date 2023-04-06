@@ -6,14 +6,13 @@
       xmlns:local="clr-namespace:BuildingMaterials.PageWindow"
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="800"
-      Title="PageOrderPickupPointInfo">
-
+      Title="Страница с информацией о пунктах выдачи">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False"  ItemsSource="{Binding OrderPickupPoint}">
+        <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False" FontSize="20" FontFamily="Comic Sans MS" ItemsSource="{Binding OrderPickupPoint}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Индекс улицы" Binding="{Binding Index}"/>
                 

@@ -26,8 +26,8 @@
         <StackPanel Grid.Row="2">
             <Button  Width="200" Height="25" Content="Войти администратором" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" 
                 Background="Green" FontSize="15"/>
-            <Button Width="200" Height="25" Content="Войти как пользователь" Background="Green" FontSize="15" Name="BtnSignInGuest" Click="BtnSignInGuest_Click"/>
-            <Button Width="200" Height="25" Content="Войти как гость" Background="Green" FontSize="15" Name="BtnVisitor" Click="BtnVisitor_Click_1"/>
+            <Button Width="200" Height="25" Content="Войти как пользователь" Background="Green" FontSize="15" Name="BtnSignInGuest" Click="BtnSignInGuest_Click" FontFamily="Comic Sans MS"/>
+            <Button Width="200" Height="25" Content="Войти как гость" Background="Green" FontSize="15" Name="BtnVisitor" Click="BtnVisitor_Click_1" FontFamily="Comic Sans MS"/>
         </StackPanel>
     </Grid>
 </Window>

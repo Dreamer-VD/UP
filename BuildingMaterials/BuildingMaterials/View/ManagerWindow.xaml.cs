@@ -16,17 +16,17 @@ using System.Windows.Shapes;
 namespace BuildingMaterials.View
 {
     /// <summary>
-    /// Логика взаимодействия для InfoWindow.xaml
+    /// Логика взаимодействия для ManagerWindow.xaml
     /// </summary>
-    public partial class GuestWindow : Window
+    public partial class ManagerWindow : Window
     {
-        public GuestWindow()
+        public ManagerWindow()
         {
             InitializeComponent();
             this.DataContext = new GuestEntryModel();
         }
 
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        private void BtnExit_Click_1(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             App.Current.MainWindow = mainWindow;

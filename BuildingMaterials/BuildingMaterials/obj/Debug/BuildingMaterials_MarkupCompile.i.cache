@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\App.xaml
-71834652317
-21998319085
-271212049525
+81768343265
+2380730423
+27-721042599
 18-1150476585
-PageWindow\PageOrderInfo.xaml;PageWindow\PageOrderPickupPointInfo.xaml;PageWindow\PageProductInfo.xaml;View\AdminWindow.xaml;View\GuestWindow.xaml;View\InfoWindow.xaml;View\MainWindow.xaml;
+PageWindow\PageOrderInfo.xaml;PageWindow\PageOrderPickupPointInfo.xaml;PageWindow\PageProductInfo.xaml;View\AdminWindow.xaml;View\GuestWindow.xaml;View\InfoWindow.xaml;View\MainWindow.xaml;View\ManagerWindow.xaml;
 resource\logo.png
 False
 

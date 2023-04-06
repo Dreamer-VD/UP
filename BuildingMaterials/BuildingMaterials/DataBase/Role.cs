@@ -7,31 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BuildingMaterials.VIewModel
+namespace BuildingMaterials.DataBase
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class Role
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public Role()
         {
-            this.Order = new HashSet<Order>();
+            this.User = new HashSet<User>();
         }
     
         public int Id { get; set; }
-        public string ProductArticleNumber { get; set; }
-        public string ProductName { get; set; }
-        public string ProductDescription { get; set; }
-        public string ProductCategory { get; set; }
-        public byte[] ProductPhoto { get; set; }
-        public string ProductManufacturer { get; set; }
-        public decimal ProductCost { get; set; }
-        public Nullable<byte> ProductDiscountAmount { get; set; }
-        public int ProductQuantityInStock { get; set; }
+        public string RoleName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<User> User { get; set; }
     }
 }

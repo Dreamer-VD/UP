@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BuildingMaterials.VIewModel
+namespace BuildingMaterials.DataBase
 {
     using System;
     using System.Data.Entity;

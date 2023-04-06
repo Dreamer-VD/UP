@@ -1,4 +1,5 @@
-﻿using BuildingMaterials.View;
+﻿using BuildingMaterials.DataBase;
+using BuildingMaterials.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,7 +60,7 @@ namespace BuildingMaterials.VIewModel
                     else MessageBox.Show("Неверный логин или пароль. Повторите попытку!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Проблема с подключением... Повторите попытку!");
             }
@@ -75,8 +76,9 @@ namespace BuildingMaterials.VIewModel
                 }
                 using (var db = new TradeDB())
                 {
-                    var result = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId !=1);
-                    if (result != null)
+                    var resultGuest = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 3);
+                    var resultManager = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 2);
+                    if (resultGuest != null && resultGuest.UserRoleId==3)
                     {
                         MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                         GuestWindow guestWindow = new GuestWindow();
@@ -85,14 +87,29 @@ namespace BuildingMaterials.VIewModel
                         {
                             if (wind is MainWindow)
                             {
-                                wind.Hide();
+                                App.Current.MainWindow = guestWindow;
+                                wind.Close();
+                            }
+                        }
+                    }
+                    else if (resultManager != null && resultManager.UserRoleId == 2)
+                    {
+                        MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+                        ManagerWindow managerWindow = new ManagerWindow();
+                        managerWindow.Show();
+                        foreach (Window wind in Application.Current.Windows)
+                        {
+                            if (wind is MainWindow)
+                            {
+                                App.Current.MainWindow = managerWindow;
+                                wind.Close();
                             }
                         }
                     }
                     else MessageBox.Show("Неверный логин или пароль. Повторите попытку!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Проблема с подключением. Повторите попытку!");
             }

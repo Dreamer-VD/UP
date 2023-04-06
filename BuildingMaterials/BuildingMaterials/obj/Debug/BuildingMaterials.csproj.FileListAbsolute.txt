@@ -147,3 +147,5 @@ E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\UP\BuildingMateri
 E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CopyComplete
 E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.exe
 E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\ManagerWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\ManagerWindow.baml

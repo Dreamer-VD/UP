@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("viewmodel/tradedbmodel.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("viewmodel/tradedbmodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/tradedbmodel.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/tradedbmodel.tt")]
 
 

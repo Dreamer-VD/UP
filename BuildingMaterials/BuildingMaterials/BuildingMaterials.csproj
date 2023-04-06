@@ -67,6 +67,42 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataBase\Order.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\OrderPickupPoint.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\OrderStatus.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Product.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Role.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\TradeDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradeDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\TradeDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\TradeDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\User.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManagerWindow.xaml.cs">
+      <DependentUpon>ManagerWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="PageWindow\PageOrderInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -108,45 +144,11 @@
     <Compile Include="PageWindow\PageProductInfo.xaml.cs">
       <DependentUpon>PageProductInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VIewModel\AppData.cs" />
     <Compile Include="VIewModel\AuthorizationViewModel.cs" />
     <Compile Include="VIewModel\BaseViewModel.cs" />
     <Compile Include="VIewModel\GuestEntryModel.cs" />
-    <Compile Include="VIewModel\Order.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\OrderPickupPoint.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="VIewModel\OrderPickupPointModel.cs" />
-    <Compile Include="VIewModel\OrderStatus.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="VIewModel\OrderViewModel.cs" />
-    <Compile Include="VIewModel\Product.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\Role.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\TradeDBModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TradeDBModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\TradeDBModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\TradeDBModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TradeDBModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\User.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="View\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
@@ -160,6 +162,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\ManagerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -179,17 +185,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="DataBase\TradeDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TradeDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataBase\TradeDBModel.edmx.diagram">
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <EntityDeploy Include="VIewModel\TradeDBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TradeDBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="VIewModel\TradeDBModel.edmx.diagram">
-      <DependentUpon>TradeDBModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -205,13 +211,14 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="VIewModel\TradeDBModel.Context.tt">
+    <Content Include="DataBase\TradeDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
       <LastGenOutput>TradeDBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="VIewModel\TradeDBModel.tt">
+    <Content Include="DataBase\TradeDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
       <LastGenOutput>TradeDBModel.cs</LastGenOutput>

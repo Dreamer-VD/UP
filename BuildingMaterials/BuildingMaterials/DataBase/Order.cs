@@ -7,23 +7,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BuildingMaterials.VIewModel
+namespace BuildingMaterials.DataBase
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class OrderStatus
+    public partial class Order
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public OrderStatus()
+        public Order()
         {
-            this.Order = new HashSet<Order>();
+            this.Product = new HashSet<Product>();
         }
     
         public int Id { get; set; }
-        public string StatusName { get; set; }
+        public int OrderStatusId { get; set; }
+        public System.DateTime OrderDate { get; set; }
+        public int OrderPickupPointId { get; set; }
+        public System.DateTime OrderDeliveryDate { get; set; }
+        public Nullable<int> UserId { get; set; }
+        public int Amount { get; set; }
     
+        public virtual OrderPickupPoint OrderPickupPoint { get; set; }
+        public virtual OrderStatus OrderStatus { get; set; }
+        public virtual User User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<Product> Product { get; set; }
     }
 }

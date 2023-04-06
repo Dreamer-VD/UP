@@ -10,7 +10,6 @@ namespace BuildingMaterials.VIewModel
     public class OrderViewModel : BaseViewModel
     {
         private string _orderDate;
-        private string _orderPickupPointId;
         private string _orderDeliveryDate;
         private string _amount;
         private ObservableCollection<Order> _orders;
@@ -39,15 +38,6 @@ namespace BuildingMaterials.VIewModel
             {
                 _orderDate = value;
                 OnPropertyChanged(nameof(OrderDate));
-            }
-        }
-        public string OrderPickupPointId
-        {
-            get => _orderPickupPointId;
-            set 
-            { 
-                _orderPickupPointId = value;
-                OnPropertyChanged(nameof(OrderPickupPointId));
             }
         }
         public string OrderDeliveryDate

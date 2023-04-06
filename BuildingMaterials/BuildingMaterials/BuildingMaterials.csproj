@@ -129,9 +129,6 @@
     <Compile Include="VIewModel\Role.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="VIewModel\sysdiagrams.cs">
-      <DependentUpon>TradeDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="VIewModel\TradeDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

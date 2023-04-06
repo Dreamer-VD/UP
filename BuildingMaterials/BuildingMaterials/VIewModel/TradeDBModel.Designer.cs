@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "E:\Praktiks\UP - VAKUN, KARPOW (3 курс 1 практика)\UP\BuildingMaterials\BuildingMaterials\VIewModel\TradeDBModel.edmx" включено. 
+﻿// Создание кода T4 для модели "D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\VIewModel\TradeDBModel.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

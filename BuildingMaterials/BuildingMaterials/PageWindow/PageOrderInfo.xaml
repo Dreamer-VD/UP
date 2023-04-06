@@ -16,9 +16,7 @@
         <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False"  ItemsSource="{Binding Orders}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Дата доставки" Binding="{Binding OrderDate}"/>
-                
-                <DataGridTextColumn Header="Id пунктов выдачи" Binding="{Binding OrderPickupPointId}"/>
-                
+
                 <DataGridTextColumn Header="Дата доставки заказа" Binding="{Binding OrderDeliveryDate}"/>
                 
                 <DataGridTextColumn Header="Количество" Binding="{Binding Amount}"/>

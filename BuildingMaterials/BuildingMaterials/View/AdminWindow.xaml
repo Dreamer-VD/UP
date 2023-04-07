@@ -12,8 +12,8 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        
-        <DataGrid Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}">
+
+        <DataGrid Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}"/>
                 
@@ -24,9 +24,14 @@
                 <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
             </DataGrid.Columns>
         </DataGrid >
-        
-        <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="Green" FontSize="12" 
-                FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
-    
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Name="BtnAdd" Content="Добавить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="Green" Click="BtnAdd_Click"/>
+            
+            <Button Name="BtnChange" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="Green" Click="BtnChange_Click"/>
+
+            <Button Name="BtnDelete" Content="Удалить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="Green" Click="BtnDelete_Click"/>
+            
+            <Button Name="BtnExit" Content="Вернуться назад" Width="100" Background="Green" FontSize="12" FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -31,41 +31,7 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(Password));
             }
         }
-        public void AdminVerification()
-        {
-            try
-            {
-                if (_login == null || _password == null)
-                {
-                    MessageBox.Show("Проблема с полями. Повторите попытку", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
-                    return;
-                }
-                using (var db = new TradeDB())
-                {
-                    var result = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 1);
-                    if (result != null)
-                    {
-                        MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
-                        AdminWindow adminWindow = new AdminWindow();
-                        adminWindow.Show();
-                        foreach (Window wind in Application.Current.Windows)
-                        {
-                            if (wind is MainWindow)
-                            {
-                                App.Current.MainWindow = adminWindow;
-                                wind.Close();
-                            }
-                        }
-                    }
-                    else MessageBox.Show("Неверный логин или пароль. Повторите попытку!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Проблема с подключением... Повторите попытку!");
-            }
-        }
-        public void GuestVerification()
+        public void Verification()
         {
             try
             {
@@ -77,17 +43,21 @@ namespace BuildingMaterials.VIewModel
                 using (var db = new TradeDB())
                 {
                     var resultGuest = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 3);
+                    
                     var resultManager = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 2);
-                    if (resultGuest != null && resultGuest.UserRoleId==3)
+                    
+                    var resultAdmin = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 1);
+                    
+                    if (resultAdmin != null && resultAdmin.UserRoleId == 1)
                     {
                         MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
-                        GuestWindow guestWindow = new GuestWindow();
-                        guestWindow.Show();
+                        AdminWindow adminWindow = new AdminWindow();
+                        adminWindow.Show();
                         foreach (Window wind in Application.Current.Windows)
                         {
                             if (wind is MainWindow)
                             {
-                                App.Current.MainWindow = guestWindow;
+                                App.Current.MainWindow = adminWindow;
                                 wind.Close();
                             }
                         }
@@ -106,12 +76,26 @@ namespace BuildingMaterials.VIewModel
                             }
                         }
                     }
+                    else if (resultGuest != null && resultGuest.UserRoleId == 3)
+                    {
+                        MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+                        GuestWindow guestWindow = new GuestWindow();
+                        guestWindow.Show();
+                        foreach (Window wind in Application.Current.Windows)
+                        {
+                            if (wind is MainWindow)
+                            {
+                                App.Current.MainWindow = guestWindow;
+                                wind.Close();
+                            }
+                        }
+                    }
                     else MessageBox.Show("Неверный логин или пароль. Повторите попытку!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Проблема с подключением. Повторите попытку!");
+                MessageBox.Show("Проблема с подключением... Повторите попытку!");
             }
         }
     }

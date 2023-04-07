@@ -31,13 +31,7 @@ namespace BuildingMaterials
         private void BtnSignIn_Click(object sender, RoutedEventArgs e)
         {
             (DataContext as AuthorizationViewModel).Password = PasswordBox.Password;
-            (DataContext as AuthorizationViewModel).AdminVerification();
-        }
-
-        private void BtnSignInGuest_Click(object sender, RoutedEventArgs e)
-        {
-            (DataContext as AuthorizationViewModel).Password = PasswordBox.Password;
-            (DataContext as AuthorizationViewModel).GuestVerification();
+            (DataContext as AuthorizationViewModel).Verification();
         }
 
         private void BtnVisitor_Click_1(object sender, RoutedEventArgs e)

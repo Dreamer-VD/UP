@@ -33,5 +33,20 @@ namespace BuildingMaterials.View
             mainWindow.Show();
             this.Close();
         }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnChange_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            (DataContext as GuestEntryModel).DeleteProduct();
+        }
     }
 }

@@ -10,12 +10,13 @@
         Title="Стройматериалы: Окно авторизации" Height="450" Width="400">
     <Grid>
         <Grid.RowDefinitions >
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontSize="50" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Image Source="/View/logo.png" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
         <StackPanel Grid.Row="1"  VerticalAlignment="Center">
             <TextBlock Text="Логин" FontSize="30" FontFamily="Comic Sans MS"/>
@@ -24,9 +25,8 @@
             <PasswordBox x:Name="PasswordBox" Height="30" FontSize="20" FontFamily="Comic Sans MS"/>
         </StackPanel>
         <StackPanel Grid.Row="2">
-            <Button  Width="200" Height="25" Content="Войти администратором" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" 
+            <Button  Width="200" Height="25" Content="Войти" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" 
                 Background="Green" FontSize="15"/>
-            <Button Width="200" Height="25" Content="Войти как пользователь" Background="Green" FontSize="15" Name="BtnSignInGuest" Click="BtnSignInGuest_Click" FontFamily="Comic Sans MS"/>
             <Button Width="200" Height="25" Content="Войти как гость" Background="Green" FontSize="15" Name="BtnVisitor" Click="BtnVisitor_Click_1" FontFamily="Comic Sans MS"/>
         </StackPanel>
     </Grid>

@@ -15,6 +15,8 @@
 
         <DataGrid Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+
                 <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}"/>
                 
                 <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>

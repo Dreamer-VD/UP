@@ -107,7 +107,9 @@
     <Compile Include="DataBase\UserInfo.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="VIewModel\ProductСategoryModel.cs" />
+    <Compile Include="View\AddProductWindow.xaml.cs">
+      <DependentUpon>AddProductWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
@@ -120,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageWindow\PageProductInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddProductWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

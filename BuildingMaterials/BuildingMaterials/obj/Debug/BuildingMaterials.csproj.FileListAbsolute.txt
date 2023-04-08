@@ -223,3 +223,5 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingM
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CopyComplete
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.exe
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
+E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.g.cs
+E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.baml

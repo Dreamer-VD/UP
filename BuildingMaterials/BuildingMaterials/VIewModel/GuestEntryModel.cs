@@ -12,6 +12,7 @@ namespace BuildingMaterials.VIewModel
 {
     public class GuestEntryModel : BaseViewModel
     {
+        private int _id;
         private string _productName;
         private string _productDescription;
         private decimal _productCost;
@@ -37,6 +38,15 @@ namespace BuildingMaterials.VIewModel
             {
                 var productInfoList = db.Product.ToList();
                 productInfoList.ForEach(p => Products.Add(p));
+            }
+        }
+        public int Id
+        {
+            get => _id;
+            set
+            {
+                _id = value;
+                OnPropertyChanged(nameof(Id));
             }
         }
         public string ProductName

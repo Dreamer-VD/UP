@@ -1,4 +1,5 @@
-﻿using BuildingMaterials.VIewModel;
+﻿using BuildingMaterials.PageWindow;
+using BuildingMaterials.VIewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,8 @@ namespace BuildingMaterials.View
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            AddProductWindow addProductWindow = new AddProductWindow();
+            addProductWindow.Show();
         }
 
         private void BtnChange_Click(object sender, RoutedEventArgs e)

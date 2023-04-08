@@ -67,6 +67,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataBase\AppData.cs" />
     <Compile Include="DataBase\Order.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
@@ -103,7 +104,9 @@
     <Compile Include="DataBase\User.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DbSet\AppData.cs" />
+    <Compile Include="DataBase\UserInfo.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="View\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
@@ -216,6 +219,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="View\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DataBase\TradeDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
@@ -226,7 +232,6 @@
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
       <LastGenOutput>TradeDBModel.cs</LastGenOutput>
     </Content>
-    <Resource Include="View\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

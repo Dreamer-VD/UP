@@ -12,23 +12,20 @@ namespace BuildingMaterials.DataBase
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class UserInfo
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
+        public UserInfo()
         {
-            this.Order = new HashSet<Order>();
+            this.User = new HashSet<User>();
         }
     
         public int Id { get; set; }
-        public int UserInfoId { get; set; }
-        public string UserLogin { get; set; }
-        public string UserPassword { get; set; }
-        public int UserRoleId { get; set; }
+        public string UserSurname { get; set; }
+        public string UserName { get; set; }
+        public string UserPatronymic { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
-        public virtual Role Role { get; set; }
-        public virtual UserInfo UserInfo { get; set; }
+        public virtual ICollection<User> User { get; set; }
     }
 }

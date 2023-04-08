@@ -32,5 +32,6 @@ namespace BuildingMaterials.DataBase
         public virtual DbSet<ProductСategory> ProductСategory { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<UserInfo> UserInfo { get; set; }
     }
 }

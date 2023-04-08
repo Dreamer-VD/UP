@@ -19,13 +19,15 @@
 
                 <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
 
-                <DataGridTextColumn Header="Категория" Binding="{Binding ProductCategory}"/>
-
                 <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
+
+                <DataGridTextColumn Header="Сумма скидки на продукт %" Binding="{Binding ProductDiscountAmount}"/>
+
+                <DataGridTextColumn Header="Кол-во на складе" Binding="{Binding ProductQuantityInStock}"/>
             </DataGrid.Columns>
         </DataGrid >
 
-        <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="Green" FontSize="12" 
+        <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="#FF498C51" FontSize="12" 
                 FontFamily="Comic Sans MS" Click="BtnExit_Click_1"/>
     </Grid>
 </Window>

@@ -22,8 +22,8 @@
                 <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
             </DataGrid.Columns>
         </DataGrid >
-        
-        <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="Green" FontSize="12" 
+
+        <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="#FF498C51" FontSize="12" 
                 FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
    
     </Grid>

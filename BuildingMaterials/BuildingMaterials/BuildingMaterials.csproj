@@ -107,6 +107,7 @@
     <Compile Include="DataBase\UserInfo.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="VIewModel\ProductСategoryModel.cs" />
     <Compile Include="View\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>

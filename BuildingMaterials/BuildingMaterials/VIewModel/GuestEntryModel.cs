@@ -3,17 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
 namespace BuildingMaterials.VIewModel
 {
-    public class GuestEntryModel:BaseViewModel
+    public class GuestEntryModel : BaseViewModel
     {
         private string _productName;
         private string _productDescription;
         private decimal _productCost;
+        private string _productDiscountAmount;
+        private string _productQuantityInStock;
+        private string _productCategoryId;
         private Product _selectedItem;
         private ObservableCollection<Product> _products;
         public ObservableCollection<Product> Products
@@ -29,10 +33,10 @@ namespace BuildingMaterials.VIewModel
         {
             Products = new ObservableCollection<Product>();
 
-            using (var db=new TradeDB())
+            using (var db = new TradeDB())
             {
-            var productInfoList = db.Product.ToList();
-            productInfoList.ForEach(p => Products.Add(p));
+                var productInfoList = db.Product.ToList();
+                productInfoList.ForEach(p => Products.Add(p));
             }
         }
         public string ProductName
@@ -62,6 +66,33 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(ProductCost));
             }
         }
+        public string ProductDiscountAmount
+        {
+            get => _productDiscountAmount;
+            set
+            {
+                _productDiscountAmount = value;
+                OnPropertyChanged(nameof(ProductDiscountAmount));
+            }
+        }
+        public string ProductQuantityInStock
+        {
+            get => _productQuantityInStock;
+            set
+            {
+                _productQuantityInStock = value;
+                OnPropertyChanged(nameof(ProductQuantityInStock));
+            }
+        }
+        public string ProductCategoryId
+        {
+            get => _productCategoryId;
+            set
+            {
+                _productCategoryId = value;
+                OnPropertyChanged(nameof(ProductCategoryId));
+            }
+        }
         public Product SelectedItem
         {
             get => _selectedItem;
@@ -81,14 +112,16 @@ namespace BuildingMaterials.VIewModel
                 {
                     //try
                     //{
-                    var productInfoList = db.Product.ToList();
-                    productInfoList.ForEach(p => Products.Add(p));
-                    var itemForDelete = db.Product.Where(o => o.Id == SelectedItem.Id).FirstOrDefault();
+                    var itemProductIdForDelete = db.Order.Where(o => o.Id == SelectedItem.Id).FirstOrDefault();
                     
-                    db.Product.Remove(itemForDelete);
+                    var itemProductForDelete = db.Product.Where(p => p.Id == SelectedItem.Id).FirstOrDefault();
                     
+                    db.Order.Remove(itemProductIdForDelete);
+
+                    db.Product.Remove(itemProductForDelete);
                     db.SaveChanges();
-                    
+
+
                     //}
                     //catch (Exception)
                     //{

@@ -18,20 +18,20 @@
                 <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}"/>
                 
                 <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
-                
-                <DataGridTextColumn Header="Категория" Binding="{Binding ProductCategory}"/>
+
+                <DataGridTextColumn Header="Категория" Binding="{Binding ProductCategoryId}"/>
                 
                 <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
             </DataGrid.Columns>
-        </DataGrid >
+        </DataGrid>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Button Name="BtnAdd" Content="Добавить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="Green" Click="BtnAdd_Click" Margin="0,0,100,0"/>
-            
-            <Button Name="BtnChange" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="Green" Click="BtnChange_Click" Margin="0,0,100,0"/>
+            <Button Name="BtnAdd" Content="Добавить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnAdd_Click" Margin="0,0,100,0"/>
 
-            <Button Name="BtnDelete" Content="Удалить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="Green" Click="BtnDelete_Click" Margin="100,0,0,0"/>
-            
-            <Button Name="BtnExit" Content="Вернуться назад" Width="100" Background="Green" FontSize="12" FontFamily="Comic Sans MS" Click="BtnExit_Click" Height="40" Margin="100,0,0,0"/>
+            <Button Name="BtnChange" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnChange_Click" Margin="0,0,100,0"/>
+
+            <Button Name="BtnDelete" Content="Удалить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnDelete_Click" Margin="100,0,0,0"/>
+
+            <Button Name="BtnExit" Content="Вернуться назад" Width="100" Background="#FF498C51" FontSize="12" FontFamily="Comic Sans MS" Click="BtnExit_Click" Height="40" Margin="100,0,0,0"/>
         </StackPanel>
     </Grid>
 </Window>

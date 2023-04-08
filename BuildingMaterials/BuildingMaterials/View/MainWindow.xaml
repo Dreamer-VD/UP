@@ -25,9 +25,8 @@
             <PasswordBox x:Name="PasswordBox" Height="30" FontSize="20" FontFamily="Comic Sans MS"/>
         </StackPanel>
         <StackPanel Grid.Row="2">
-            <Button  Width="200" Height="25" Content="Войти" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" 
-                Background="Green" FontSize="15"/>
-            <Button Width="200" Height="25" Content="Войти как гость" Background="Green" FontSize="15" Name="BtnVisitor" Click="BtnVisitor_Click_1" FontFamily="Comic Sans MS"/>
+            <Button  Width="200" Height="25" Content="Войти" Name="BtnSignIn" Click="BtnSignIn_Click" FontFamily="Comic Sans MS" Background="#FF498C51" FontSize="15"/>
+            <Button Width="200" Height="25" Content="Войти как гость" Background="#FF498C51" FontSize="15" Name="BtnVisitor" Click="BtnVisitor_Click_1" FontFamily="Comic Sans MS"/>
         </StackPanel>
     </Grid>
 </Window>

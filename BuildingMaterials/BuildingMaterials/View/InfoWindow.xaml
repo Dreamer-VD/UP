@@ -18,16 +18,16 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0">
-            <Button x:Name="BtnLoadProduct" Height="20" Width="150" Content="Продукты" Background="Green" Click="BtnLoadProduct_Click" FontFamily="Comic Sans MS"/>
+            <Button x:Name="BtnLoadProduct" Height="20" Width="150" Content="Продукты" Background="#FF498C51" Click="BtnLoadProduct_Click" FontFamily="Comic Sans MS"/>
 
-            <Button x:Name="BtnLoadOrder" Height="20" Width="150" Content="Заказы" Background="Green" Click="BtnLoadOrder_Click" FontFamily="Comic Sans MS"/>
+            <Button x:Name="BtnLoadOrder" Height="20" Width="150" Content="Заказы" Background="#FF498C51" Click="BtnLoadOrder_Click" FontFamily="Comic Sans MS"/>
 
-            <Button x:Name="BtnLoadOrderPickupPoint" Height="20" Width="150" Content="Пункты выдачи" Background="Green" Click="BtnLoadOrderPickupPoint_Click" FontFamily="Comic Sans MS"/>
+            <Button x:Name="BtnLoadOrderPickupPoint" Height="20" Width="150" Content="Пункты выдачи" Background="#FF498C51" Click="BtnLoadOrderPickupPoint_Click" FontFamily="Comic Sans MS"/>
         </StackPanel>
 
         <Frame x:Name="FrameInfo" Grid.Row="0" Grid.Column="1" NavigationUIVisibility="Hidden"/>
 
-        <Button x:Name="BtnExit" Grid.Row="0" Grid.Column="0" Width="150" Height="30" VerticalAlignment="Bottom" Background="Green" Content="Вернуться в меню" FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
+        <Button x:Name="BtnExit" Grid.Row="0" Grid.Column="0" Width="150" Height="30" VerticalAlignment="Bottom" Background="#FF498C51" Content="Вернуться в меню" FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
 
     </Grid>
 </Window>

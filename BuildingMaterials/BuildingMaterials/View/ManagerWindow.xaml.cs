@@ -23,7 +23,7 @@ namespace BuildingMaterials.View
         public ManagerWindow()
         {
             InitializeComponent();
-            this.DataContext = new GuestEntryModel();
+            this.DataContext = new ProductViewModel();
         }
 
         private void BtnExit_Click_1(object sender, RoutedEventArgs e)

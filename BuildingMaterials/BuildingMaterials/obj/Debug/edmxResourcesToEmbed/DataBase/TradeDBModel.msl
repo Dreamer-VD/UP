@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище TradeDBModelContainer" CdmEntityContainer="TradeDB">
+    <EntitySetMapping Name="GoodsSupplier">
+      <EntityTypeMapping TypeName="TradeDBModel.GoodsSupplier">
+        <MappingFragment StoreEntitySet="GoodsSupplier">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GoodsSupplierName" ColumnName="GoodsSupplierName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Order">
       <EntityTypeMapping TypeName="TradeDBModel.Order">
         <MappingFragment StoreEntitySet="Order">
@@ -36,14 +44,31 @@
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductNameId" ColumnName="ProductNameId" />
           <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
           <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
           <ScalarProperty Name="ProductPhoto" ColumnName="ProductPhoto" />
-          <ScalarProperty Name="ProductManufacturer" ColumnName="ProductManufacturer" />
+          <ScalarProperty Name="ProductManufacturerId" ColumnName="ProductManufacturerId" />
+          <ScalarProperty Name="GoodsSupplierId" ColumnName="GoodsSupplierId" />
           <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
           <ScalarProperty Name="ProductDiscountAmount" ColumnName="ProductDiscountAmount" />
           <ScalarProperty Name="ProductQuantityInStock" ColumnName="ProductQuantityInStock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductManufacturer">
+      <EntityTypeMapping TypeName="TradeDBModel.ProductManufacturer">
+        <MappingFragment StoreEntitySet="ProductManufacturer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductManufacturerName" ColumnName="ProductManufacturerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductName">
+      <EntityTypeMapping TypeName="TradeDBModel.ProductName">
+        <MappingFragment StoreEntitySet="ProductName">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameProduct" ColumnName="NameProduct" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

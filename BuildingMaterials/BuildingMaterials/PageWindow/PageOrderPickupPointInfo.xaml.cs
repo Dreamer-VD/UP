@@ -24,7 +24,7 @@ namespace BuildingMaterials.PageWindow
         public PageOrderPickupPointInfo()
         {
             InitializeComponent();
-            this.DataContext = new OrderPickupPointModel();
+            this.DataContext = new OrderPickupPointVIewModel();
         }
     }
 }

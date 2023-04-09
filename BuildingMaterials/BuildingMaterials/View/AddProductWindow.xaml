@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuildingMaterials.View"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Окно добавления товара" Height="620" Width="400">
+        Title="Окно добавления товара" Height="700" Width="400">
     <Grid>
         <StackPanel>
             <Label  Content="Добавте товар" HorizontalAlignment="Center" FontSize="50" FontFamily="Comic Sans MS"/>
@@ -15,20 +15,22 @@
             <TextBlock Text="Арктикул товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductArticleNumber" Height="30"/>
             <TextBlock Text="Название товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductName" Height="30"/>
+            <ComboBox Name="CmbProductName" Height="30" DisplayMemberPath="NameProduct"/>
             <TextBlock Text="Описание товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductDescription" Height="30"/>
             <TextBlock Text="Категория товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <ComboBox Name="CmbCategory" Height="30" DisplayMemberPath="CategoryName"/>
             <TextBlock Text="Производитель товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductManufacturer" Height="30"/>
+            <ComboBox Name="CmbProductManufacturer" Height="30" DisplayMemberPath="ProductManufacturerName"/>
+            <TextBlock Text="Поставщик товара" FontSize="15" FontFamily="Comic Sans MS"/>
+            <ComboBox Name="CmbGoodsSupplier" Height="30" DisplayMemberPath="GoodsSupplierName"/>
             <TextBlock Text="Стоимость товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductCost" Height="30"/>
             <TextBlock Text="Суммарная скидка товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductDiscountAmount" Height="30"/>
             <TextBlock Text="Кол-во товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductQuantityInStock" Height="30"/>
-            <Button Name="BtnAddProduct" Content="Добавить" FontSize="20" Height="40" Width="150" Margin="0,5,0,0" Background="#FF498C51" Click="BtnAddProduct_Click"/>
+            <Button Name="BtnAddProduct" Content="Добавить" FontSize="20" Height="40" Width="150" Margin="0,30,0,0" Background="#FF498C51" Click="BtnAddProduct_Click"/>
         </StackPanel>
     </Grid>
 </Window>

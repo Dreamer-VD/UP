@@ -10,30 +10,47 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <DataGrid Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}">
+        <DataGrid Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
 
-                <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}"/>
+                <DataGridTextColumn Header="Название товара" Binding="{Binding ProductNameId}"/>
                 
                 <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
 
                 <DataGridTextColumn Header="Категория" Binding="{Binding ProductCategoryId}"/>
                 
                 <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
+
+                <DataGridTextColumn Header="Производитель товара" Binding="{Binding ProductManufacturerId}"/>
+
+                <DataGridTextColumn Header="Поставщик товара" Binding="{Binding GoodsSupplierId}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Button Name="BtnAdd" Content="Добавить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnAdd_Click" Margin="0,0,100,0"/>
 
-            <Button Name="BtnChange" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnChange_Click" Margin="0,0,100,0"/>
+        <Frame Name="FrameInfo" Grid.Row="1" NavigationUIVisibility="Hidden"/>
 
-            <Button Name="BtnDelete" Content="Удалить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnDelete_Click" Margin="100,0,0,0"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Content="Загрузить-" FontFamily="Comic Sans MS" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="BtnLoadProductName" Content="Названия" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnLoadProductName_Click" />
+            <Button Name="BtnLoadProductСategory" Content="Категории" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnLoadProductСategory_Click"/>
+            <Button Name="BtnLoadProductManufacturer" Content="Производители" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnLoadProductManufacturer_Click"/>
+            <Button Name="BtnLoadGoodsSupplier" Width="100" Content="Поставщики" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnLoadGoodsSupplier_Click"/>
+        </StackPanel>
 
-            <Button Name="BtnExit" Content="Вернуться назад" Width="100" Background="#FF498C51" FontSize="12" FontFamily="Comic Sans MS" Click="BtnExit_Click" Height="40" Margin="100,0,0,0"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="BtnAdd" Content="Добавить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnAdd_Click"/>
+
+            <Button Name="BtnChange" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnChange_Click"/>
+
+            <Button Name="BtnDelete" Content="Удалить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnDelete_Click"/>
+
+            <Button Name="BtnExit" Content="Вернуться назад" Width="100" Background="#FF498C51" FontSize="12" FontFamily="Comic Sans MS" Click="BtnExit_Click" Height="40"/>
         </StackPanel>
     </Grid>
 </Window>

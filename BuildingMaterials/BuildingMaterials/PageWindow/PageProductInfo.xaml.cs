@@ -24,7 +24,7 @@ namespace BuildingMaterials.PageWindow
         public PageProductInfo()
         {
             InitializeComponent();
-            this.DataContext = new GuestEntryModel();
+            this.DataContext = new ProductViewModel();
         }
     }
 }

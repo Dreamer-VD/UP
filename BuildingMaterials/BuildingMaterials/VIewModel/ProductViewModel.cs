@@ -10,15 +10,17 @@ using System.Windows;
 
 namespace BuildingMaterials.VIewModel
 {
-    public class GuestEntryModel : BaseViewModel
+    public class ProductViewModel : BaseViewModel
     {
         private int _id;
-        private string _productName;
+        private string _productNameId;
         private string _productDescription;
         private decimal _productCost;
         private string _productDiscountAmount;
         private string _productQuantityInStock;
         private string _productCategoryId;
+        private string _productManufacturerId;
+        private string _goodsSupplierId;
         private Product _selectedItem;
         private ObservableCollection<Product> _products;
         public ObservableCollection<Product> Products
@@ -30,7 +32,7 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(Products));
             }
         }
-        public GuestEntryModel()
+        public ProductViewModel()
         {
             Products = new ObservableCollection<Product>();
 
@@ -49,13 +51,13 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(Id));
             }
         }
-        public string ProductName
+        public string ProductNameId
         {
-            get => _productName;
+            get => _productNameId;
             set
             {
-                _productName = value;
-                OnPropertyChanged(nameof(ProductName));
+                _productNameId = value;
+                OnPropertyChanged(nameof(ProductNameId));
             }
         }
         public string ProductDescription
@@ -103,6 +105,24 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(ProductCategoryId));
             }
         }
+        public string ProductManufacturerId
+        {
+            get => _productManufacturerId;
+            set
+            {
+                _productManufacturerId = value;
+                OnPropertyChanged(nameof(ProductManufacturerId));
+            }
+        }
+        public string GoodsSupplierId
+        {
+            get => _goodsSupplierId;
+            set
+            {
+                _goodsSupplierId= value;
+                OnPropertyChanged(nameof(GoodsSupplierId));
+            }
+        }
         public Product SelectedItem
         {
             get => _selectedItem;
@@ -120,9 +140,9 @@ namespace BuildingMaterials.VIewModel
                     MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (message == MessageBoxResult.OK)
                 {
-                    //try
-                    //{
-                    var itemProductIdForDelete = db.Order.Where(o => o.Id == SelectedItem.Id).FirstOrDefault();
+                    try
+                    {
+                        var itemProductIdForDelete = db.Order.Where(o => o.Id == SelectedItem.Id).FirstOrDefault();
                     
                     var itemProductForDelete = db.Product.Where(p => p.Id == SelectedItem.Id).FirstOrDefault();
                     
@@ -132,12 +152,12 @@ namespace BuildingMaterials.VIewModel
                     db.SaveChanges();
 
 
-                    //}
-                    //catch (Exception)
-                    //{
-                    //    MessageBox.Show("Проблемы с удалением. Повторите попытку.", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
-                    //}
                 }
+                    catch (Exception)
+                {
+                    MessageBox.Show("Данные не изменены. Повторите попытку.", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
             }
         }
     }

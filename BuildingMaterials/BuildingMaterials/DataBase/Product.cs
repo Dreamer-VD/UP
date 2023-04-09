@@ -22,16 +22,20 @@ namespace BuildingMaterials.DataBase
     
         public int Id { get; set; }
         public string ProductArticleNumber { get; set; }
-        public string ProductName { get; set; }
+        public int ProductNameId { get; set; }
         public string ProductDescription { get; set; }
         public int ProductCategoryId { get; set; }
         public byte[] ProductPhoto { get; set; }
-        public string ProductManufacturer { get; set; }
+        public int ProductManufacturerId { get; set; }
+        public int GoodsSupplierId { get; set; }
         public decimal ProductCost { get; set; }
         public Nullable<byte> ProductDiscountAmount { get; set; }
         public int ProductQuantityInStock { get; set; }
     
+        public virtual GoodsSupplier GoodsSupplier { get; set; }
+        public virtual ProductName ProductName { get; set; }
         public virtual ProductСategory ProductСategory { get; set; }
+        public virtual ProductManufacturer ProductManufacturer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }
     }

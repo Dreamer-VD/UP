@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\App.xaml
-9-273796874
+131411975329
 2380730423
-30-245974790
+41427834274
 18-1166047413
-PageWindow\PageOrderInfo.xaml;PageWindow\PageOrderPickupPointInfo.xaml;PageWindow\PageProductInfo.xaml;View\AddProductWindow.xaml;View\AdminWindow.xaml;View\GuestWindow.xaml;View\InfoWindow.xaml;View\MainWindow.xaml;View\ManagerWindow.xaml;
+PageWindow\PageGoodsSupplierInfo.xaml;PageWindow\PageOrderInfo.xaml;PageWindow\PageOrderPickupPointInfo.xaml;PageWindow\PageProductInfo.xaml;PageWindow\PageProductManufacturerInfo.xaml;PageWindow\PageProductNameInfo.xaml;PageWindow\PageProductСategoryInfo.xaml;View\AddProductWindow.xaml;View\AdminWindow.xaml;View\GuestWindow.xaml;View\InfoWindow.xaml;View\AuthorizationWindow.xaml;View\ManagerWindow.xaml;
 resource\logo.png
 False
 

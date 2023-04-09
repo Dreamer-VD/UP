@@ -24,7 +24,10 @@ namespace BuildingMaterials.View
         {
             InitializeComponent();
 
-            CmbCategory.ItemsSource = AppData.db.ProductСategory.ToList(); 
+            CmbCategory.ItemsSource = AppData.db.ProductСategory.ToList();
+            CmbGoodsSupplier.ItemsSource = AppData.db.GoodsSupplier.ToList();
+            CmbProductName.ItemsSource = AppData.db.ProductName.ToList();
+            CmbProductManufacturer.ItemsSource = AppData.db.ProductManufacturer.ToList();
         }
 
         private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
@@ -35,14 +38,19 @@ namespace BuildingMaterials.View
 
             product.ProductArticleNumber = ProductArticleNumber.Text;
 
-            product.ProductName = ProductName.Text;
+            var currentProductName = CmbProductName.SelectedItem as ProductName;
+            product.ProductNameId = currentProductName.Id;
 
             product.ProductDescription = ProductDescription.Text;
 
             var currentProductCategory = CmbCategory.SelectedItem as ProductСategory;
-            product.ProductCategoryId= currentProductCategory.Id;
+            product.ProductCategoryId = currentProductCategory.Id;
 
-            product.ProductManufacturer = ProductManufacturer.Text;
+            var currentProductManufacture = CmbProductManufacturer.SelectedItem as ProductManufacturer;
+            product.ProductManufacturerId = currentProductManufacture.Id;
+
+            var currentGoodsSupplier = CmbGoodsSupplier.SelectedItem as GoodsSupplier;
+            product.GoodsSupplierId = currentGoodsSupplier.Id;
 
             product.ProductCost = Convert.ToDecimal(ProductCost.Text);
 

@@ -68,6 +68,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataBase\AppData.cs" />
+    <Compile Include="DataBase\GoodsSupplier.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataBase\Order.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
@@ -78,6 +81,12 @@
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Product.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ProductManufacturer.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ProductName.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\ProductСategory.cs">
@@ -107,12 +116,32 @@
     <Compile Include="DataBase\UserInfo.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PageWindow\PageGoodsSupplierInfo.xaml.cs">
+      <DependentUpon>PageGoodsSupplierInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageWindow\PageProductManufacturerInfo.xaml.cs">
+      <DependentUpon>PageProductManufacturerInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageWindow\PageProductNameInfo.xaml.cs">
+      <DependentUpon>PageProductNameInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageWindow\PageProductСategoryInfo.xaml.cs">
+      <DependentUpon>PageProductСategoryInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VIewModel\GoodsSupplierViewModel.cs" />
+    <Compile Include="VIewModel\ProductManufacturerViewModel.cs" />
+    <Compile Include="VIewModel\ProductNameViewModel.cs" />
+    <Compile Include="VIewModel\ProductСategoryVIewModel.cs" />
     <Compile Include="View\AddProductWindow.xaml.cs">
       <DependentUpon>AddProductWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="PageWindow\PageGoodsSupplierInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageWindow\PageOrderInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -122,6 +151,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageWindow\PageProductInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageWindow\PageProductManufacturerInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageWindow\PageProductNameInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageWindow\PageProductСategoryInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,7 +182,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainWindow.xaml">
+    <Page Include="View\AuthorizationWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -160,8 +201,8 @@
     </Compile>
     <Compile Include="VIewModel\AuthorizationViewModel.cs" />
     <Compile Include="VIewModel\BaseViewModel.cs" />
-    <Compile Include="VIewModel\GuestEntryModel.cs" />
-    <Compile Include="VIewModel\OrderPickupPointModel.cs" />
+    <Compile Include="VIewModel\ProductViewModel.cs" />
+    <Compile Include="VIewModel\OrderPickupPointVIewModel.cs" />
     <Compile Include="VIewModel\OrderViewModel.cs" />
     <Compile Include="View\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
@@ -172,8 +213,8 @@
     <Compile Include="View\InfoWindow.xaml.cs">
       <DependentUpon>InfoWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="View\AuthorizationWindow.xaml.cs">
+      <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\ManagerWindow.xaml">

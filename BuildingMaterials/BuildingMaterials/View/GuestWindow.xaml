@@ -13,9 +13,9 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding Products}">
+        <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding Products}" FontFamily="Comic Sans MS">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}"/>
+                <DataGridTextColumn Header="Id товара" Binding="{Binding ProductNameId}"/>
 
                 <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
 

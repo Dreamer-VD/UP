@@ -20,7 +20,7 @@
 
                 <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
             </DataGrid.Columns>
-        </DataGrid >
+        </DataGrid>
     
     </Grid>
 </Page>

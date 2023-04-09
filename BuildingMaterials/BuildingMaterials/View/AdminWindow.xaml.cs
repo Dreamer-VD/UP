@@ -1,4 +1,5 @@
-﻿using BuildingMaterials.PageWindow;
+﻿using BuildingMaterials.DataBase;
+using BuildingMaterials.PageWindow;
 using BuildingMaterials.VIewModel;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace BuildingMaterials.View
         public AdminWindow()
         {
             InitializeComponent();
-            this.DataContext = new GuestEntryModel();
+            this.DataContext = new ProductViewModel();
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
@@ -48,7 +49,27 @@ namespace BuildingMaterials.View
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            (DataContext as GuestEntryModel).DeleteProduct();
+            (DataContext as ProductViewModel).DeleteProduct();
+        }
+
+        private void BtnLoadProductName_Click(object sender, RoutedEventArgs e)
+        {
+            FrameInfo.Content = new PageProductName();
+        }
+
+        private void BtnLoadProductСategory_Click(object sender, RoutedEventArgs e)
+        {
+            FrameInfo.Content = new PageProductСategory();
+        }
+
+        private void BtnLoadProductManufacturer_Click(object sender, RoutedEventArgs e)
+        {
+            FrameInfo.Content = new PageProductManufacturerInfo();
+        }
+
+        private void BtnLoadGoodsSupplier_Click(object sender, RoutedEventArgs e)
+        {
+            FrameInfo.Content = new PageGoodsSupplierInfo();
         }
     }
 }

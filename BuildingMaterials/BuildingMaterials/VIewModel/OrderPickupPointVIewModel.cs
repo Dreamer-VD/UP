@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BuildingMaterials.VIewModel
 {
-    public class OrderPickupPointModel : BaseViewModel
+    public class OrderPickupPointVIewModel : BaseViewModel
     {
         private string _index;
         private string _street;
@@ -22,7 +22,7 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(OrderPickupPoint));
             }
         }
-        public OrderPickupPointModel()
+        public OrderPickupPointVIewModel()
         {
             OrderPickupPoint= new ObservableCollection<OrderPickupPoint>();
             using (var db = new TradeDB())

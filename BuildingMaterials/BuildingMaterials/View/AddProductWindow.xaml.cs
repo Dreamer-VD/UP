@@ -23,7 +23,6 @@ namespace BuildingMaterials.View
         public AddProductWindow()
         {
             InitializeComponent();
-
             CmbCategory.ItemsSource = AppData.db.ProductСategory.ToList();
             CmbGoodsSupplier.ItemsSource = AppData.db.GoodsSupplier.ToList();
             CmbProductName.ItemsSource = AppData.db.ProductName.ToList();
@@ -33,8 +32,6 @@ namespace BuildingMaterials.View
         private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
         {
             Product product = new Product();
-
-            product.Id = Convert.ToInt32(Id.Text);
 
             product.ProductArticleNumber = ProductArticleNumber.Text;
 

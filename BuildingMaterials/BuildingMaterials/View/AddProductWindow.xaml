@@ -10,8 +10,6 @@
     <Grid>
         <StackPanel>
             <Label  Content="Добавте товар" HorizontalAlignment="Center" FontSize="50" FontFamily="Comic Sans MS"/>
-            <TextBlock Text="Id товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="Id" Height="30"/>
             <TextBlock Text="Арктикул товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductArticleNumber" Height="30"/>
             <TextBlock Text="Название товара" FontSize="15" FontFamily="Comic Sans MS"/>

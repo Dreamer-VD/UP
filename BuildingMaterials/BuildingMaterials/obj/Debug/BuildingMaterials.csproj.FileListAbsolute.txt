@@ -89,14 +89,12 @@ D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\De
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.SuggestedBindingRedirects.cache
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.g.cs
-D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\MainWindow.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\App.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_Content.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.cache
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.lref
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.baml
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.baml
-D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\MainWindow.baml
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.g.resources
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.Properties.Resources.resources
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.GenerateResource.cache
@@ -233,3 +231,15 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingM
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductManufacturerInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductNameInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductСategoryInfo.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AuthorizationWindow.g.cs
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductManufacturerInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductNameInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductСategoryInfo.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.baml
+D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AuthorizationWindow.baml

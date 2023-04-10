@@ -12,7 +12,7 @@ namespace BuildingMaterials.VIewModel
 {
     public class ProductViewModel : BaseViewModel
     {
-        private int _id;
+        private string _productArticleNumber;
         private string _productNameId;
         private string _productDescription;
         private decimal _productCost;
@@ -42,13 +42,13 @@ namespace BuildingMaterials.VIewModel
                 productInfoList.ForEach(p => Products.Add(p));
             }
         }
-        public int Id
+        public string ProductArticleNumber
         {
-            get => _id;
+            get => _productArticleNumber;
             set
             {
-                _id = value;
-                OnPropertyChanged(nameof(Id));
+                _productArticleNumber = value;
+                OnPropertyChanged(nameof(ProductArticleNumber));
             }
         }
         public string ProductNameId
@@ -119,7 +119,7 @@ namespace BuildingMaterials.VIewModel
             get => _goodsSupplierId;
             set
             {
-                _goodsSupplierId= value;
+                _goodsSupplierId = value;
                 OnPropertyChanged(nameof(GoodsSupplierId));
             }
         }
@@ -130,34 +130,6 @@ namespace BuildingMaterials.VIewModel
             {
                 _selectedItem = value;
                 OnPropertyChanged(nameof(SelectedItem));
-            }
-        }
-        public void DeleteProduct()
-        {
-            using (var db = new TradeDB())
-            {
-                var message = MessageBox.Show("Вы уверены, что хотите удалить данный элемент?" + "Это действие невозможно отменить!", "Предупреждение",
-                    MessageBoxButton.OKCancel, MessageBoxImage.Warning);
-                if (message == MessageBoxResult.OK)
-                {
-                    try
-                    {
-                        var itemProductIdForDelete = db.Order.Where(o => o.Id == SelectedItem.Id).FirstOrDefault();
-                    
-                    var itemProductForDelete = db.Product.Where(p => p.Id == SelectedItem.Id).FirstOrDefault();
-                    
-                    db.Order.Remove(itemProductIdForDelete);
-
-                    db.Product.Remove(itemProductForDelete);
-                    db.SaveChanges();
-
-
-                }
-                    catch (Exception)
-                {
-                    MessageBox.Show("Данные не изменены. Повторите попытку.", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
             }
         }
     }

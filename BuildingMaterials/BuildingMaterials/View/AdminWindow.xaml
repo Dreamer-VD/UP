@@ -15,13 +15,13 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <DataGrid Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
+        <DataGrid Grid.Column="1" Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Арктикул товара" Binding="{Binding ProductArticleNumber}"/>
 
                 <DataGridTextColumn Header="Название товара" Binding="{Binding ProductNameId}"/>
                 
-                <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
+                <DataGridTextColumn Header="Стоимость т" Binding="{Binding ProductCost}"/>
 
                 <DataGridTextColumn Header="Категория" Binding="{Binding ProductCategoryId}"/>
                 
@@ -45,6 +45,8 @@
 
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Name="BtnAdd" Content="Добавить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnAdd_Click"/>
+
+            <Button Name="BtnUpdate" Content="Обновление" FontFamily="Comic Sans MS" Background="#FF498C51" Width="100" FontSize="12" Click="BtnUpdate_Click"/> 
 
             <Button Name="BtnChange" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnChange_Click"/>
 

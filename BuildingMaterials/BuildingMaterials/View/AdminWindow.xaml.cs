@@ -49,7 +49,28 @@ namespace BuildingMaterials.View
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            (DataContext as ProductViewModel).DeleteProduct();
+            //try
+            //{
+                var result = MessageBox.Show("Вы действительно хотите удалить товар? Изменения не обратимы.", "Сообщение", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                if (result == MessageBoxResult.OK)
+                {
+                var product = ProductGrid.SelectedItem as Product;
+
+               
+
+                AppData.db.Product.Remove(product);
+
+                AppData.db.SaveChanges();
+
+                ProductGrid.ItemsSource = AppData.db.Product.ToList();
+
+                MessageBox.Show("Удаление успешно!");
+                }
+            //}
+            //catch (Exception) 
+            //{
+            //    MessageBox.Show("Удаление не успешно");
+            //}
         }
 
         private void BtnLoadProductName_Click(object sender, RoutedEventArgs e)
@@ -70,6 +91,13 @@ namespace BuildingMaterials.View
         private void BtnLoadGoodsSupplier_Click(object sender, RoutedEventArgs e)
         {
             FrameInfo.Content = new PageGoodsSupplierInfo();
+        }
+
+        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWindow adminWindow = new AdminWindow();
+            this.Close();
+            adminWindow.Show();
         }
     }
 }

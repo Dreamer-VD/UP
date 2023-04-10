@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuildingMaterials.View"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Окно добавления товара" Height="700" Width="400">
+        Title="Окно добавления товара" Height="700" Width="400" ResizeMode="NoResize">
     <Grid>
         <StackPanel>
             <Label  Content="Добавте товар" HorizontalAlignment="Center" FontSize="50" FontFamily="Comic Sans MS"/>
@@ -23,7 +23,7 @@
             <TextBlock Text="Поставщик товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <ComboBox Name="CmbGoodsSupplier" Height="30" DisplayMemberPath="GoodsSupplierName"/>
             <TextBlock Text="Стоимость товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductCost" Height="30"/>
+            <TextBox Name="ProductCost" Height="30" TextChanged="ProductCost_TextChanged"/>
             <TextBlock Text="Суммарная скидка товара" FontSize="15" FontFamily="Comic Sans MS"/>
             <TextBox Name="ProductDiscountAmount" Height="30"/>
             <TextBlock Text="Кол-во товара" FontSize="15" FontFamily="Comic Sans MS"/>

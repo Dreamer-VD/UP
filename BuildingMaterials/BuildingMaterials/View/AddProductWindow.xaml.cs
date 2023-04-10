@@ -31,6 +31,7 @@ namespace BuildingMaterials.View
 
         private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
         {
+            
             Product product = new Product();
 
             product.ProductArticleNumber = ProductArticleNumber.Text;
@@ -59,6 +60,12 @@ namespace BuildingMaterials.View
             AppData.db.SaveChanges();
             (Owner as AdminWindow).LoadData();
             MessageBox.Show("Продукт добавлен в базу.", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void ProductCost_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+
         }
     }
 }

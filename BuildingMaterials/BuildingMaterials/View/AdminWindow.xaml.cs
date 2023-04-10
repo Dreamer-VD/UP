@@ -28,6 +28,12 @@ namespace BuildingMaterials.View
             this.DataContext = new ProductViewModel();
         }
 
+        public void LoadData()
+        {
+            var product = AppData.db.Product.ToList();
+            ProductGrid.ItemsSource = product;
+        }
+
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
@@ -39,6 +45,7 @@ namespace BuildingMaterials.View
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
             AddProductWindow addProductWindow = new AddProductWindow();
+            addProductWindow.Owner = Application.Current.MainWindow;
             addProductWindow.Show();
         }
 
@@ -55,11 +62,13 @@ namespace BuildingMaterials.View
                 if (result == MessageBoxResult.OK)
                 {
                 var product = ProductGrid.SelectedItem as Product;
-
-               
-
+                //var order = product.Order;
+                
+                AppData.db.Product.Attach(product);
+                //AppData.db.Product.Attach((Product)order);
+                //AppData.db.Product.Remove((Product)order);
                 AppData.db.Product.Remove(product);
-
+         
                 AppData.db.SaveChanges();
 
                 ProductGrid.ItemsSource = AppData.db.Product.ToList();

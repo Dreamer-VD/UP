@@ -15,6 +15,23 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
+
+        <!--<ListBox x:Name="lbProduct" Grid.Row="0" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    
+                    <StackPanel  Orientation="Horizontal">
+                        <Image Width="100" Height="100" Source="/Resource/picture.png"/>
+                        <StackPanel Orientation="Vertical">
+                            
+                        </StackPanel>
+                            
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <Image Height="100" Width="100"/>
+        </ListBox>-->
+
         <DataGrid Grid.Column="1" Name="ProductGrid" Grid.Row="0" IsReadOnly="False" AutoGenerateColumns="False" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Арктикул товара" Binding="{Binding ProductArticleNumber}"/>

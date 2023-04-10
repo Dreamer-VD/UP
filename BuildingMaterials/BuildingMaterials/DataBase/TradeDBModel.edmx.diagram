@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="bf7c47ca2a134468ae856a00bb5943b6" Name="Diagram1">
+      <Diagram DiagramId="15c98f36973e4a9197351d0872e6f646" Name="Diagram1">
         <EntityTypeShape EntityType="TradeDBModel.GoodsSupplier" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
         <EntityTypeShape EntityType="TradeDBModel.Order" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
         <EntityTypeShape EntityType="TradeDBModel.OrderPickupPoint" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
@@ -16,15 +16,15 @@
         <EntityTypeShape EntityType="TradeDBModel.Role" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="TradeDBModel.User" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="TradeDBModel.UserInfo" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="TradeDBModel.FK__Product__GoodsSu__3F466844" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__Order__OrderPick__30F848ED" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__Order__OrderStat__300424B4" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__Order__UserId__31EC6D26" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__Product__Product__3C69FB99" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__Product__Product__3D5E1FD2" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__Product__Product__3E52440B" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__User__UserRoleId__286302EC" ManuallyRouted="false" />
-        <AssociationConnector Association="TradeDBModel.FK__User__UserInfoId__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__GoodsSu__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Order__OrderPick__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Order__OrderStat__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Order__UserId__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__Product__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__Product__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__Product__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__User__UserRoleId__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__User__UserInfoId__3C69FB99" ManuallyRouted="false" />
         <AssociationConnector Association="TradeDBModel.OrderProduct" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

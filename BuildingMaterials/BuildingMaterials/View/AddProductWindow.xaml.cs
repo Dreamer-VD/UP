@@ -57,6 +57,7 @@ namespace BuildingMaterials.View
 
             AppData.db.Product.Add(product);
             AppData.db.SaveChanges();
+            (Owner as AdminWindow).LoadData();
             MessageBox.Show("Продукт добавлен в базу.", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }

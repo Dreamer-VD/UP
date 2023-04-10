@@ -280,6 +280,7 @@
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
       <LastGenOutput>TradeDBModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resource\picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

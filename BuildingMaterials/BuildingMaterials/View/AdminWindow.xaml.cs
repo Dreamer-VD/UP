@@ -31,7 +31,7 @@ namespace BuildingMaterials.View
         public void LoadData()
         {
             var product = AppData.db.Product.ToList();
-            ProductGrid.ItemsSource = product;
+            lbProduct.ItemsSource = product;
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
@@ -56,57 +56,30 @@ namespace BuildingMaterials.View
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 var result = MessageBox.Show("Вы действительно хотите удалить товар? Изменения не обратимы.", "Сообщение", MessageBoxButton.OKCancel, MessageBoxImage.Information);
                 if (result == MessageBoxResult.OK)
                 {
-                var product = ProductGrid.SelectedItem as Product;
-                //var order = product.Order;
-                
-                AppData.db.Product.Attach(product);
-                //AppData.db.Product.Attach((Product)order);
-                //AppData.db.Product.Remove((Product)order);
-                AppData.db.Product.Remove(product);
-         
-                AppData.db.SaveChanges();
+                    var product = lbProduct.SelectedItem as Product;
+                    //var order = product.Order;
 
-                ProductGrid.ItemsSource = AppData.db.Product.ToList();
+                    AppData.db.Product.Attach(product);
+                    //AppData.db.Product.Attach((Product)order);
+                    //AppData.db.Product.Remove((Product)order);
+                    AppData.db.Product.Remove(product);
 
-                MessageBox.Show("Удаление успешно!");
+                    AppData.db.SaveChanges();
+
+                    lbProduct.ItemsSource = AppData.db.Product.ToList();
+
+                    MessageBox.Show("Удаление успешно!");
                 }
-            //}
-            //catch (Exception) 
-            //{
-            //    MessageBox.Show("Удаление не успешно");
-            //}
-        }
-
-        private void BtnLoadProductName_Click(object sender, RoutedEventArgs e)
-        {
-            FrameInfo.Content = new PageProductName();
-        }
-
-        private void BtnLoadProductСategory_Click(object sender, RoutedEventArgs e)
-        {
-            FrameInfo.Content = new PageProductСategory();
-        }
-
-        private void BtnLoadProductManufacturer_Click(object sender, RoutedEventArgs e)
-        {
-            FrameInfo.Content = new PageProductManufacturerInfo();
-        }
-
-        private void BtnLoadGoodsSupplier_Click(object sender, RoutedEventArgs e)
-        {
-            FrameInfo.Content = new PageGoodsSupplierInfo();
-        }
-
-        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
-        {
-            AdminWindow adminWindow = new AdminWindow();
-            this.Close();
-            adminWindow.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Удаление не успешно, тк продукт связан с заказом. Удалите связь, после чего возвращайтесь.");
+            }
         }
     }
 }

@@ -270,6 +270,9 @@
     <Resource Include="View\logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resource\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DataBase\TradeDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
@@ -280,7 +283,6 @@
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
       <LastGenOutput>TradeDBModel.cs</LastGenOutput>
     </Content>
-    <Resource Include="Resource\picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

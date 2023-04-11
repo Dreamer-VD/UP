@@ -25,7 +25,7 @@
 
                 <DataGridTextColumn Header="Кол-во на складе" Binding="{Binding ProductQuantityInStock}"/>
 
-                <DataGridTextColumn Header="Производитель товара" Binding="{Binding ProductManufacturerId}"/>
+                <DataGridTextColumn Header="Производитель товара" Binding="{Binding ProductManufacturer}"/>
 
                 <DataGridTextColumn Header="Поставщик товара" Binding="{Binding GoodsSupplierId}"/>
             </DataGrid.Columns>

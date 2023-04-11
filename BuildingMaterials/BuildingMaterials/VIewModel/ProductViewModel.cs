@@ -12,15 +12,6 @@ namespace BuildingMaterials.VIewModel
 {
     public class ProductViewModel : BaseViewModel
     {
-        private string _productArticleNumber;
-        private string _productNameId;
-        private string _productDescription;
-        private decimal _productCost;
-        private string _productDiscountAmount;
-        private string _productQuantityInStock;
-        private string _productCategoryId;
-        private string _productManufacturerId;
-        private string _goodsSupplierId;
         private Product _selectedItem;
         private ObservableCollection<Product> _products;
         public ObservableCollection<Product> Products
@@ -38,89 +29,9 @@ namespace BuildingMaterials.VIewModel
 
             using (var db = new TradeDB())
             {
-                var productInfoList = db.Product.ToList();
+                var productInfoList = db.Product.Include("ProductName").Include("GoodsSupplier").Include("ProductManufacturer").Include("ProductСategory").ToList();
+
                 productInfoList.ForEach(p => Products.Add(p));
-            }
-        }
-        public string ProductArticleNumber
-        {
-            get => _productArticleNumber;
-            set
-            {
-                _productArticleNumber = value;
-                OnPropertyChanged(nameof(ProductArticleNumber));
-            }
-        }
-        public string ProductNameId
-        {
-            get => _productNameId;
-            set
-            {
-                _productNameId = value;
-                OnPropertyChanged(nameof(ProductNameId));
-            }
-        }
-        public string ProductDescription
-        {
-            get => _productDescription;
-            set
-            {
-                _productDescription = value;
-                OnPropertyChanged(nameof(ProductDescription));
-            }
-        }
-        public decimal ProductCost
-        {
-            get => _productCost;
-            set
-            {
-                _productCost = value;
-                OnPropertyChanged(nameof(ProductCost));
-            }
-        }
-        public string ProductDiscountAmount
-        {
-            get => _productDiscountAmount;
-            set
-            {
-                _productDiscountAmount = value;
-                OnPropertyChanged(nameof(ProductDiscountAmount));
-            }
-        }
-        public string ProductQuantityInStock
-        {
-            get => _productQuantityInStock;
-            set
-            {
-                _productQuantityInStock = value;
-                OnPropertyChanged(nameof(ProductQuantityInStock));
-            }
-        }
-        public string ProductCategoryId
-        {
-            get => _productCategoryId;
-            set
-            {
-                _productCategoryId = value;
-                OnPropertyChanged(nameof(ProductCategoryId));
-            }
-        }
-        public string ProductManufacturerId
-        {
-            get => _productManufacturerId;
-            set
-            {
-                _productManufacturerId = value;
-                OnPropertyChanged(nameof(ProductManufacturerId));
-            }
-        }
-        public string GoodsSupplierId
-        {
-            get => _goodsSupplierId;
-            set
-            {
-                _goodsSupplierId = value;
-                OnPropertyChanged(nameof(GoodsSupplierId));
             }
         }
         public Product SelectedItem

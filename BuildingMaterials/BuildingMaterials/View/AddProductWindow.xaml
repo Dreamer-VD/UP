@@ -11,24 +11,24 @@
         <StackPanel>
             <Label  Content="Добавте товар" HorizontalAlignment="Center" FontSize="50" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Арктикул товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductArticleNumber" Height="30"/>
+            <TextBox Name="ProductArticleNumber" Height="30" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Название товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <ComboBox Name="CmbProductName" Height="30" DisplayMemberPath="NameProduct"/>
+            <ComboBox Name="CmbProductName" Height="30" DisplayMemberPath="NameProduct" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Описание товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductDescription" Height="30"/>
+            <TextBox Name="ProductDescription" Height="30" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Категория товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <ComboBox Name="CmbCategory" Height="30" DisplayMemberPath="CategoryName"/>
+            <ComboBox Name="CmbCategory" Height="30" DisplayMemberPath="CategoryName" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Производитель товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <ComboBox Name="CmbProductManufacturer" Height="30" DisplayMemberPath="ProductManufacturerName"/>
+            <ComboBox Name="CmbProductManufacturer" Height="30" DisplayMemberPath="ProductManufacturerName" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Поставщик товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <ComboBox Name="CmbGoodsSupplier" Height="30" DisplayMemberPath="GoodsSupplierName"/>
+            <ComboBox Name="CmbGoodsSupplier" Height="30" DisplayMemberPath="GoodsSupplierName" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Стоимость товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductCost" Height="30" TextChanged="ProductCost_TextChanged"/>
+            <TextBox Name="ProductCost" Height="30" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Суммарная скидка товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductDiscountAmount" Height="30"/>
+            <TextBox Name="ProductDiscountAmount" Height="30" FontFamily="Comic Sans MS"/>
             <TextBlock Text="Кол-во товара" FontSize="15" FontFamily="Comic Sans MS"/>
-            <TextBox Name="ProductQuantityInStock" Height="30"/>
-            <Button Name="BtnAddProduct" Content="Добавить" FontSize="20" Height="40" Width="150" Margin="0,30,0,0" Background="#FF498C51" Click="BtnAddProduct_Click"/>
+            <TextBox Name="ProductQuantityInStock" Height="30" FontFamily="Comic Sans MS"/>
+            <Button Name="BtnAddProduct" Content="Добавить" FontSize="20" Height="40" Width="150" Margin="0,30,0,0" Background="#FF498C51" Click="BtnAddProduct_Click" FontFamily="Comic Sans MS"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -23,21 +23,7 @@ namespace BuildingMaterials.View
         public InfoWindow()
         {
             InitializeComponent();
-        }
-
-        private void BtnLoadProduct_Click(object sender, RoutedEventArgs e)
-        {
             FrameInfo.Content = new PageProductInfo();
-        }
-
-        private void BtnLoadOrder_Click(object sender, RoutedEventArgs e)
-        {
-            FrameInfo.Content = new PageOrderInfo();
-        }
-
-        private void BtnLoadOrderPickupPoint_Click(object sender, RoutedEventArgs e)
-        {
-            FrameInfo.Content = new PageOrderPickupPointInfo();
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)

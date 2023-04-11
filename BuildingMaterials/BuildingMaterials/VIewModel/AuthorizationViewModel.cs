@@ -48,7 +48,7 @@ namespace BuildingMaterials.VIewModel
                     
                     var resultAdmin = db.User.FirstOrDefault(u => u.UserLogin == _login && u.UserPassword == _password && u.UserRoleId == 1);
                     
-                    if (resultAdmin != null && resultAdmin.UserRoleId == 1)
+                    if (resultAdmin != null)
                     {
                         MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                         AdminWindow adminWindow = new AdminWindow();
@@ -62,7 +62,7 @@ namespace BuildingMaterials.VIewModel
                             }
                         }
                     }
-                    else if (resultManager != null && resultManager.UserRoleId == 2)
+                    else if (resultManager != null)
                     {
                         MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                         ManagerWindow managerWindow = new ManagerWindow();
@@ -76,7 +76,7 @@ namespace BuildingMaterials.VIewModel
                             }
                         }
                     }
-                    else if (resultGuest != null && resultGuest.UserRoleId == 3)
+                    else if (resultGuest != null)
                     {
                         MessageBox.Show("Авторизация прошла успешно!", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
                         GuestWindow guestWindow = new GuestWindow();
@@ -95,7 +95,7 @@ namespace BuildingMaterials.VIewModel
             }
             catch (Exception)
             {
-                MessageBox.Show("Проблема с подключением... Повторите попытку!");
+                MessageBox.Show("Проблема с подключением... Повторите попытку.");
             }
         }
     }

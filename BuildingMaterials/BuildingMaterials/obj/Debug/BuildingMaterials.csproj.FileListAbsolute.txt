@@ -194,12 +194,7 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\bin\Debug\EntityFra
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\bin\Debug\ru\EntityFramework.resources.dll
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.AssemblyReference.cache
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.SuggestedBindingRedirects.cache
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderInfo.g.cs
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderPickupPointInfo.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductInfo.g.cs
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductManufacturerInfo.g.cs
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductNameInfo.g.cs
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductСategoryInfo.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.g.cs
@@ -210,12 +205,7 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\App.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_Content.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.cache
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.lref
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderInfo.baml
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageOrderPickupPointInfo.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductInfo.baml
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductManufacturerInfo.baml
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductNameInfo.baml
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductСategoryInfo.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.baml
@@ -229,8 +219,6 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingM
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.CopyComplete
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.exe
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.pdb
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.g.cs
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.baml
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageGoodsSupplierInfo.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductManufacturerInfo.g.cs
 D:\IS-33\UP - Vakun, Karpov\github\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductNameInfo.g.cs

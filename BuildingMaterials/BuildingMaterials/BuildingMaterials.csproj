@@ -116,53 +116,13 @@
     <Compile Include="DataBase\UserInfo.cs">
       <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PageWindow\PageGoodsSupplierInfo.xaml.cs">
-      <DependentUpon>PageGoodsSupplierInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PageWindow\PageProductManufacturerInfo.xaml.cs">
-      <DependentUpon>PageProductManufacturerInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PageWindow\PageProductNameInfo.xaml.cs">
-      <DependentUpon>PageProductNameInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PageWindow\PageProductСategoryInfo.xaml.cs">
-      <DependentUpon>PageProductСategoryInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="VIewModel\GoodsSupplierViewModel.cs" />
-    <Compile Include="VIewModel\ProductManufacturerViewModel.cs" />
-    <Compile Include="VIewModel\ProductNameViewModel.cs" />
-    <Compile Include="VIewModel\ProductСategoryVIewModel.cs" />
     <Compile Include="View\AddProductWindow.xaml.cs">
       <DependentUpon>AddProductWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="PageWindow\PageGoodsSupplierInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PageWindow\PageOrderInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PageWindow\PageOrderPickupPointInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="PageWindow\PageProductInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PageWindow\PageProductManufacturerInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PageWindow\PageProductNameInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PageWindow\PageProductСategoryInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,20 +150,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PageWindow\PageOrderInfo.xaml.cs">
-      <DependentUpon>PageOrderInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PageWindow\PageOrderPickupPointInfo.xaml.cs">
-      <DependentUpon>PageOrderPickupPointInfo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PageWindow\PageProductInfo.xaml.cs">
       <DependentUpon>PageProductInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="VIewModel\AuthorizationViewModel.cs" />
     <Compile Include="VIewModel\BaseViewModel.cs" />
     <Compile Include="VIewModel\ProductViewModel.cs" />
-    <Compile Include="VIewModel\OrderPickupPointVIewModel.cs" />
-    <Compile Include="VIewModel\OrderViewModel.cs" />
     <Compile Include="View\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
@@ -258,16 +210,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resource\icon.ico" />
-    <SplashScreen Include="Resource\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resource\picture.png" />
@@ -283,6 +231,8 @@
       <DependentUpon>TradeDBModel.edmx</DependentUpon>
       <LastGenOutput>TradeDBModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="View\logo.png" />
+    <SplashScreen Include="Resource\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

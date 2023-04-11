@@ -49,11 +49,6 @@ namespace BuildingMaterials.View
             addProductWindow.Show();
         }
 
-        private void BtnChange_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -78,7 +73,7 @@ namespace BuildingMaterials.View
             }
             catch (Exception)
             {
-                MessageBox.Show("Удаление не успешно, тк продукт связан с заказом. Удалите связь, после чего возвращайтесь.");
+                MessageBox.Show("Удаление не возможно, потому что товар закреплён за заказом или вы его не выбрали! Ожидайте выполенение заказа!", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }

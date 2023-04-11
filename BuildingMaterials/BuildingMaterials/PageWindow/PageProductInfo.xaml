@@ -12,15 +12,35 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False" FontSize="20" FontFamily="Comic Sans MS" ItemsSource="{Binding Products}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Арктикул товара" Binding="{Binding ProductArticleNumber}"/>
-
-                <DataGridTextColumn Header="Стоимость" Binding="{Binding ProductCost}"/>
-
-                <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <ListView x:Name="lbProduct" Grid.Row="0" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="5" Background="Gray" BorderBrush="#76e383" Width="800">
+                        <StackPanel  Orientation="Horizontal">
+                            <Image Width="100" Height="100" Source="/Resource/picture.png"/>
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="Акрктикул товара:"/>
+                                <Label Content="Название товара:"/>
+                                <Label Content="Описание товара:"/>
+                                <Label Content="Производитель:"/>
+                                <Label Content="Поставщик товара:"/>
+                                <Label Content="Стоимость товара:"/>
+                                <Label Content="Категория товара:"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="{Binding ProductArticleNumber}"/>
+                                <Label Content="{Binding ProductName.NameProduct}"/>
+                                <Label Content="{Binding ProductDescription}"/>
+                                <Label Content="{Binding ProductManufacturer.ProductManufacturerName}"/>
+                                <Label Content="{Binding GoodsSupplier.GoodsSupplierName}"/>
+                                <Label Content="{Binding ProductCost}"/>
+                                <Label Content="{Binding ProductСategory.CategoryName}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     
     </Grid>
 </Page>

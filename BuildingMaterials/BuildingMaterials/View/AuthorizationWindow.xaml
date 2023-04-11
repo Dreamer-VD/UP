@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuildingMaterials"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
+        ResizeMode="CanMinimize"
         Title="Стройматериалы: Окно авторизации" Height="450" Width="400">
     <Grid>
         <Grid.RowDefinitions >

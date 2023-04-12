@@ -52,6 +52,8 @@
 
             <Button Name="BtnDelete" Content="Удалить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnDelete_Click"/>
 
+            <Button Name="BtnEditInfo" Content="Изменить" Width="100" FontSize="12" FontFamily="Comic Sans MS" Background="#FF498C51" Click="BtnEditInfo_Click"/>
+
             <Button Name="BtnExit" Content="Вернуться назад" Width="100" Background="#FF498C51" FontSize="12" FontFamily="Comic Sans MS" Click="BtnExit_Click" Height="40"/>
         </StackPanel>
     </Grid>

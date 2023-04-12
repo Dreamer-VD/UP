@@ -194,7 +194,6 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\bin\Debug\EntityFra
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\bin\Debug\ru\EntityFramework.resources.dll
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.AssemblyReference.cache
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials.csproj.SuggestedBindingRedirects.cache
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductInfo.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.g.cs
@@ -205,7 +204,6 @@ E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\App.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_Content.g.cs
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.cache
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\BuildingMaterials_MarkupCompile.lref
-E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\PageWindow\PageProductInfo.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AddProductWindow.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\AdminWindow.baml
 E:\Praktiks\UP (SOLO)\UP\BuildingMaterials\BuildingMaterials\obj\Debug\View\GuestWindow.baml

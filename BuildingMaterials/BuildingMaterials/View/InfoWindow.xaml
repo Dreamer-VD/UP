@@ -15,18 +15,46 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Width="800" Height="35" VerticalAlignment="Top">
-            <Label Content="Поиск товара"  HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Margin="50,0,0,0"/>
-            <Label Content="Cортировка товаратовара"  HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Margin="200,0,0,0"/>
+            <Label Content="Поиск товара"  HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" VerticalAlignment="Bottom" Margin="20,0,0,0"/>
+            <Label Content="Cортировка товаратовара по цене" FontWeight="Bold" FontFamily="Comic Sans MS" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="160,0,0,0"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Width="800" Height="35" HorizontalAlignment="Left">
 
-            <TextBox Width="150" Height="25" FontFamily="Comic Sans MS" Margin="20,0,0,0"/>
+            <TextBox Name="TB_Search" Width="150" Height="25" FontFamily="Comic Sans MS" Margin="20,0,0,0" TextChanged="TB_Search_TextChanged"/>
 
-            <RadioButton Content="По убыванию" FontFamily="Comic Sans MS" Margin="120,0,0,0"/>
-            <RadioButton Content="По возврастанию" FontFamily="Comic Sans MS"/>
+            <RadioButton Name="RBA" Content="По возврастанию" FontFamily="Comic Sans MS" Margin="120,0,0,0" IsChecked="False" Checked="RBA_Checked"/>
+            <RadioButton Name="RBD"  Content="По убыванию" FontFamily="Comic Sans MS" IsChecked="False" Checked="RBA_Checked"/>
         </StackPanel>
 
-        <Frame x:Name="FrameInfo" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <ListView x:Name="lbProduct" Grid.Row="1" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="5" Background="Gray" BorderBrush="#76e383" Width="800">
+                        <StackPanel  Orientation="Horizontal">
+                            <Image Width="100" Height="100" Source="/Resource/picture.png"/>
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="Акрктикул товара:"/>
+                                <Label Content="Название товара:"/>
+                                <Label Content="Описание товара:"/>
+                                <Label Content="Производитель:"/>
+                                <Label Content="Поставщик товара:"/>
+                                <Label Content="Стоимость товара:"/>
+                                <Label Content="Категория товара:"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="{Binding ProductArticleNumber}"/>
+                                <Label Content="{Binding ProductName.NameProduct}"/>
+                                <Label Content="{Binding ProductDescription}"/>
+                                <Label Content="{Binding ProductManufacturer.ProductManufacturerName}"/>
+                                <Label Content="{Binding GoodsSupplier.GoodsSupplierName}"/>
+                                <Label Content="{Binding ProductCost}"/>
+                                <Label Content="{Binding ProductСategory.CategoryName}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
         <Button x:Name="BtnExit" Grid.Row="2" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#FF498C51" Content="Вернуться в меню" FontFamily="Comic Sans MS" Click="BtnExit_Click"/>
 

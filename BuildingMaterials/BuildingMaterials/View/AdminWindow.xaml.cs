@@ -1,5 +1,4 @@
 ﻿using BuildingMaterials.DataBase;
-using BuildingMaterials.PageWindow;
 using BuildingMaterials.VIewModel;
 using System;
 using System.Collections.Generic;
@@ -75,6 +74,11 @@ namespace BuildingMaterials.View
             {
                 MessageBox.Show("Удаление не возможно, потому что товар закреплён за заказом или вы его не выбрали! Ожидайте выполенение заказа!", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
+        }
+
+        private void BtnEditInfo_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

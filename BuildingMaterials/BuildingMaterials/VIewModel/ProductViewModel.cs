@@ -43,5 +43,27 @@ namespace BuildingMaterials.VIewModel
                 OnPropertyChanged(nameof(SelectedItem));
             }
         }
+        public void Sort(int type)
+        {
+
+            if (type == 1) 
+            {
+                using (var db = new TradeDB()) 
+                {
+                    var result = db.Product.Include("ProductName").Include("GoodsSupplier").Include("ProductManufacturer").Include("ProductСategory").OrderBy(r => r.ProductCost).ToList();
+                    Products.Clear();
+                    result.ToList().ForEach(p => Products.Add(p));
+                }
+            }
+            if (type == 2) 
+            {
+                using (var db = new TradeDB())
+                {
+                    var result = db.Product.Include("ProductName").Include("GoodsSupplier").Include("ProductManufacturer").Include("ProductСategory").OrderByDescending(r => r.ProductCost).ToList();
+                    Products.Clear();
+                    result.ToList().ForEach(p => Products.Add(p));
+                }
+            }
+        }
     }
 }

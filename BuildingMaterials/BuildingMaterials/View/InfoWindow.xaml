@@ -14,13 +14,13 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Width="800" Height="35" VerticalAlignment="Top">
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Width="800" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Label Content="Поиск товара"  HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" VerticalAlignment="Bottom" Margin="20,0,0,0"/>
             <Label Content="Cортировка товаратовара по цене" FontWeight="Bold" FontFamily="Comic Sans MS" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="160,0,0,0"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Width="800" Height="35" HorizontalAlignment="Left">
 
-            <TextBox Name="TB_Search" Width="150" Height="25" FontFamily="Comic Sans MS" Margin="20,0,0,0" TextChanged="TB_Search_TextChanged"/>
+            <TextBox Name="TB_Search" Width="150" Height="25" FontFamily="Comic Sans MS" TextChanged="TB_Search_TextChanged"/>
 
             <RadioButton Name="RBA" Content="По возврастанию" FontFamily="Comic Sans MS" Margin="120,0,0,0" IsChecked="False" Checked="RBA_Checked"/>
             <RadioButton Name="RBD"  Content="По убыванию" FontFamily="Comic Sans MS" IsChecked="False" Checked="RBA_Checked"/>
@@ -29,7 +29,7 @@
         <ListView x:Name="lbProduct" Grid.Row="1" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderThickness="5" Background="Gray" BorderBrush="#76e383" Width="800">
+                    <Border BorderThickness="5" Background="#FF498C51" BorderBrush="#76e383" Width="800">
                         <StackPanel  Orientation="Horizontal">
                             <Image Width="100" Height="100" Source="/Resource/picture.png"/>
                             <StackPanel Orientation="Vertical">

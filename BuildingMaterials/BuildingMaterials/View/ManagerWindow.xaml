@@ -16,7 +16,7 @@
         <ListView x:Name="lbProduct" Grid.Row="0" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderThickness="5" Background="Gray" BorderBrush="#76e383" Width="800">
+                    <Border BorderThickness="5" Background="#FF498C51" BorderBrush="#76e383" Width="800">
                         <StackPanel  Orientation="Horizontal">
                             <Image Width="100" Height="100" Source="/Resource/picture.png"/>
                             <StackPanel Orientation="Vertical">
@@ -37,7 +37,7 @@
                                 <Label Content="{Binding ProductManufacturer.ProductManufacturerName}"/>
                                 <Label Content="{Binding GoodsSupplier.GoodsSupplierName}"/>
                                 <Label Content="{Binding ProductCost}"/>
-                                <Label Content="{Binding ProductQuantityInStock}"/>
+                                <Label Name="ProductQuantityInStock" Content="{Binding ProductQuantityInStock}"/>
                                 <Label Content="{Binding ProductDiscountAmount}"/>
                                 <Label Content="{Binding ProductСategory.CategoryName}"/>
                             </StackPanel>
@@ -46,6 +46,13 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Width="800" Height="35" HorizontalAlignment="Center" Grid.Row="1">
+
+            <TextBox Name="TB_Search" Width="150" Height="25" FontFamily="Comic Sans MS" TextChanged="TB_Search_TextChanged"/>
+
+            <RadioButton Name="RBA" Content="По возврастанию" FontFamily="Comic Sans MS" Margin="120,0,0,0" IsChecked="False" Checked="RBA_Checked"/>
+            <RadioButton Name="RBD"  Content="По убыванию" FontFamily="Comic Sans MS" IsChecked="False" Checked="RBA_Checked"/>
+        </StackPanel>
 
         <Button Name="BtnExit" Content="Вернуться назад" Grid.Row="1" Width="100" HorizontalAlignment="Right" Background="#FF498C51" FontSize="12" 
                 FontFamily="Comic Sans MS" Click="BtnExit_Click_1"/>

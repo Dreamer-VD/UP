@@ -75,10 +75,27 @@ namespace BuildingMaterials.View
                 MessageBox.Show("Удаление не возможно, потому что товар закреплён за заказом или вы его не выбрали! Ожидайте выполенение заказа!", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
-
-        private void BtnEditInfo_Click(object sender, RoutedEventArgs e)
+        private void TB_Search_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+            lbProduct.ItemsSource = AppData.db.Product.Where(l => l.ProductName.NameProduct == TB_Search.Text || l.ProductName.NameProduct.Contains(TB_Search.Text) 
+            || l.ProductArticleNumber == TB_Search.Text || l.ProductArticleNumber.Contains(TB_Search.Text) 
+            || l.ProductDescription == TB_Search.Text || l.ProductDescription.Contains(TB_Search.Text)
+            || l.ProductСategory.CategoryName == TB_Search.Text || l.ProductСategory.CategoryName.Contains(TB_Search.Text)
+            || l.ProductManufacturer.ProductManufacturerName == TB_Search.Text || l.ProductManufacturer.ProductManufacturerName.Contains(TB_Search.Text)
+            || l.GoodsSupplier.GoodsSupplierName == TB_Search.Text || l.GoodsSupplier.GoodsSupplierName.Contains(TB_Search.Text)
+            ).ToList();
+        }
+
+        private void RBA_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (RBA.IsChecked == true)
+            {
+                (DataContext as ProductViewModel).Sort(1);
+            }
+            else if (RBD.IsChecked == true)
+            {
+                (DataContext as ProductViewModel).Sort(2);
+            }
         }
     }
 }

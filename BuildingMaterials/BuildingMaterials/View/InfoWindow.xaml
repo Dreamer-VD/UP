@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuildingMaterials.View"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Подробная информация" Height="550" Width="850" MinHeight="400" MinWidth="500" >
+        Title="Гостевое окно" Height="550" Width="920" MinHeight="400" MinWidth="500" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
@@ -14,11 +14,11 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Width="800" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Width="800" Height="35" VerticalAlignment="Top" HorizontalAlignment="Center">
             <Label Content="Поиск товара"  HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" VerticalAlignment="Bottom" Margin="20,0,0,0"/>
             <Label Content="Cортировка товаратовара по цене" FontWeight="Bold" FontFamily="Comic Sans MS" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="160,0,0,0"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Width="800" Height="35" HorizontalAlignment="Left">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Width="800" Height="35" HorizontalAlignment="Center">
 
             <TextBox Name="TB_Search" Width="150" Height="25" FontFamily="Comic Sans MS" TextChanged="TB_Search_TextChanged"/>
 
@@ -26,32 +26,27 @@
             <RadioButton Name="RBD"  Content="По убыванию" FontFamily="Comic Sans MS" IsChecked="False" Checked="RBA_Checked"/>
         </StackPanel>
 
-        <ListView x:Name="lbProduct" Grid.Row="1" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" FontFamily="Comic Sans MS">
+        <ListView Name="lbProduct" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedItem}" Grid.Row="1">
             <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderThickness="5" Background="#FF498C51" BorderBrush="#76e383" Width="800">
-                        <StackPanel  Orientation="Horizontal">
-                            <Image Width="100" Height="100" Source="/Resource/picture.png"/>
-                            <StackPanel Orientation="Vertical">
-                                <Label Content="Акрктикул товара:"/>
-                                <Label Content="Название товара:"/>
-                                <Label Content="Описание товара:"/>
-                                <Label Content="Производитель:"/>
-                                <Label Content="Поставщик товара:"/>
-                                <Label Content="Стоимость товара:"/>
-                                <Label Content="Категория товара:"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Vertical">
-                                <Label Content="{Binding ProductArticleNumber}"/>
-                                <Label Content="{Binding ProductName.NameProduct}"/>
-                                <Label Content="{Binding ProductDescription}"/>
-                                <Label Content="{Binding ProductManufacturer.ProductManufacturerName}"/>
-                                <Label Content="{Binding GoodsSupplier.GoodsSupplierName}"/>
-                                <Label Content="{Binding ProductCost}"/>
-                                <Label Content="{Binding ProductСategory.CategoryName}"/>
-                            </StackPanel>
+                <DataTemplate >
+                    <WrapPanel Orientation="Horizontal">
+                        <Image Source="\Resource\picture.png" Height="100" Width="100"/>
+                        <StackPanel Orientation="Vertical" Margin="20 15 0 0" Width="650" Height="Auto">
+                            <TextBlock Text="Название:" />
+                            <TextBlock Text="{Binding ProductName.NameProduct}" FontWeight="Bold" />
+                            <TextBlock Text="Описание:" />
+                            <TextBlock Text="{Binding ProductDescription}" FontWeight="Bold" />
+                            <TextBlock Text="Производитель:" />
+                            <TextBlock Text="{Binding ProductManufacturer.ProductManufacturerName}" FontWeight="Bold"/>
+                            <TextBlock Text="Стоимость:" />
+                            <TextBlock Text="{Binding ProductCost}" FontWeight="Bold"/>
                         </StackPanel>
-                    </Border>
+
+                        <StackPanel Orientation="Vertical" Margin="0 15 0 0">
+                            <TextBlock Text="Кол-во на складе:" />
+                            <TextBlock Text="{Binding ProductQuantityInStock}" FontWeight="Bold" />
+                        </StackPanel>
+                    </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
